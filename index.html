@@ -54,7 +54,6 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
   "knowsAbout": ["Red Team Operations","Penetration Testing","Cloud Security","Adversary Simulation","AV/EDR Evasion","AWS Security","Azure Security","GCP Security","Kubernetes Security","Web Application Security","API Security","Active Directory Security","MITRE ATT&CK","OWASP Top 10"],
   "sameAs": [
     "https://www.linkedin.com/in/bogdanlukin",
-    "https://github.com/Bert0ni",
     "https://www.credential.net/profile/bohdanlukin/wallet",
     "https://certs.zeropointsecurity.co.uk/profile/bohdan-lukin/wallet",
     "https://portal.offsec.com/public-profile/e0190982-2f36-11f0-9794-0ad45fbd5c7b"
@@ -83,6 +82,21 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
+<nav class="topnav" aria-label="Primary">
+  <div class="wrap topnav-inner">
+    <a class="brand" href="#top">Bohdan&nbsp;Lukin<span class="dot">.</span></a>
+    <button class="navtoggle" id="navToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#videos">Videos</a>
+      <a href="#articles">Articles</a>
+      <a class="nav-cv" href="assets/Bohdan-Lukin-CV.pdf" download>CV ↓</a>
+    </div>
+  </div>
+</nav>
+
 <div class="theme-bar" role="group" aria-label="Theme settings">
   <button class="mode" id="modeBtn" title="Toggle light/dark" aria-label="Toggle light or dark mode">🌙</button>
   <span class="sep" aria-hidden="true"></span>
@@ -106,7 +120,6 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
       <div class="cta">
         <a class="btn primary" href="assets/Bohdan-Lukin-CV.pdf" download>Download CV (PDF)</a>
         <a class="btn" href="https://www.linkedin.com/in/bogdanlukin" rel="noopener" target="_blank">LinkedIn</a>
-        <a class="btn" href="https://github.com/Bert0ni" rel="noopener" target="_blank">GitHub</a>
       </div>
       <p class="loc">📍 Bratislava, Slovakia · Open to red team &amp; offensive security roles</p>
     </div>
@@ -115,7 +128,7 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
 
 <main id="main" class="wrap">
 
-  <section aria-label="Summary" class="card summary">
+  <section id="about" aria-label="Summary" class="card summary">
     <p>Security testing leader specializing in <strong>offensive security, cloud-native adversary simulation, and enterprise-scale penetration testing</strong>. I design and run multi-stage attack campaigns across AWS, Azure/Microsoft&nbsp;Entra and GCP, with deep expertise in AV/EDR-aware tradecraft, hybrid-identity exploitation and web/API/mobile assessment — paired with executive-ready risk communication.</p>
   </section>
 
@@ -129,7 +142,7 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
     </div>
   </section>
 
-  <section aria-labelledby="exp-h">
+  <section id="experience" aria-labelledby="exp-h">
     <h2 id="exp-h">Experience</h2>
 
     <article class="item">
@@ -194,7 +207,7 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
     </div>
   </section>
 
-  <section aria-labelledby="certs-h">
+  <section id="certifications" aria-labelledby="certs-h">
     <h2 id="certs-h">Certifications</h2>
     <p class="certs-note">30+ credentials — each card links to its verification source. Full wallets: <a href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank">credential.net ↗</a> · <a href="https://certs.zeropointsecurity.co.uk/profile/bohdan-lukin/wallet" rel="noopener" target="_blank">Zero-Point ↗</a> · <a href="https://portal.offsec.com/public-profile/e0190982-2f36-11f0-9794-0ad45fbd5c7b" rel="noopener" target="_blank">OffSec ↗</a></p>
     <div class="cert-grid">
@@ -218,6 +231,22 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
     </div>
   </section>
 
+  <section id="videos" aria-labelledby="videos-h">
+    <div class="sec-head">
+      <h2 id="videos-h">Videos</h2>
+      <a class="sec-link" id="ytLink" href="#" rel="noopener" target="_blank" hidden>YouTube channel ↗</a>
+    </div>
+    <div class="media-grid" id="videoGrid"></div>
+  </section>
+
+  <section id="articles" aria-labelledby="articles-h">
+    <div class="sec-head">
+      <h2 id="articles-h">Articles &amp; Talks</h2>
+      <a class="sec-link" href="https://www.linkedin.com/in/bogdanlukin/recent-activity/all/" rel="noopener" target="_blank">LinkedIn activity ↗</a>
+    </div>
+    <div class="media-grid" id="articleGrid"></div>
+  </section>
+
   <section class="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">Get in touch</h2>
     <p>Open to Red Team, offensive security and cloud security engagements.</p>
@@ -232,10 +261,67 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
 <footer>
   <div class="wrap">
     <p>© <span id="yr"></span> Bohdan Lukin · Bratislava, Slovakia</p>
-    <p class="links"><a href="https://www.linkedin.com/in/bogdanlukin" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://github.com/Bert0ni" rel="noopener" target="_blank">GitHub</a> · <a href="https://bohdan-lukin.com/">bohdan-lukin.com</a></p>
+    <p class="links"><a href="https://www.linkedin.com/in/bogdanlukin" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://bohdan-lukin.com/">bohdan-lukin.com</a></p>
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<!-- ============================================================
+     CONTENT — add your videos & articles here later.
+     Videos: paste the YouTube URL; the thumbnail is auto-pulled.
+     Articles: works for LinkedIn posts, Medium, blogs, etc.
+     ============================================================ -->
+<script>
+const YOUTUBE_CHANNEL = ""; // e.g. "https://www.youtube.com/@yourhandle"  (leave "" to hide the link)
+
+const VIDEOS = [
+  // { title: "Attacking Entra ID", url: "https://youtu.be/VIDEO_ID", date: "2026", tag: "Red Team" },
+];
+
+const ARTICLES = [
+  // { title: "Bypassing EDR in 2026", url: "https://medium.com/...", source: "Medium", date: "2026", excerpt: "Short summary..." },
+];
+
+(function(){
+  // YouTube channel link
+  var yt=document.getElementById('ytLink');
+  if(YOUTUBE_CHANNEL){ yt.href=YOUTUBE_CHANNEL; yt.hidden=false; }
+
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function ytId(u){var m=String(u).match(/(?:youtu\.be\/|v=|\/embed\/|\/shorts\/)([A-Za-z0-9_-]{11})/);return m?m[1]:null;}
+
+  function emptyState(label){
+    return '<div class="media-empty"><span class="pulse"></span>'+label+'</div>';
+  }
+
+  var vg=document.getElementById('videoGrid');
+  if(VIDEOS.length){
+    vg.innerHTML=VIDEOS.map(function(v){
+      var id=ytId(v.url);
+      var thumb=v.thumb||(id?('https://i.ytimg.com/vi/'+id+'/hqdefault.jpg'):'');
+      return '<a class="media-card video" href="'+esc(v.url)+'" rel="noopener" target="_blank">'+
+        (thumb?'<span class="thumb" style="background-image:url('+esc(thumb)+')"><span class="play">▶</span></span>':'<span class="thumb noimg"><span class="play">▶</span></span>')+
+        '<span class="media-meta">'+(v.tag?'<span class="media-tag">'+esc(v.tag)+'</span>':'')+(v.date?'<span class="media-date">'+esc(v.date)+'</span>':'')+'</span>'+
+        '<span class="media-title">'+esc(v.title)+'</span></a>';
+    }).join('');
+  } else {
+    vg.innerHTML=emptyState('Videos coming soon — YouTube walkthroughs and demos will appear here.');
+  }
+
+  var ag=document.getElementById('articleGrid');
+  if(ARTICLES.length){
+    ag.innerHTML=ARTICLES.map(function(a){
+      return '<a class="media-card article" href="'+esc(a.url)+'" rel="noopener" target="_blank">'+
+        '<span class="media-meta">'+(a.source?'<span class="media-tag">'+esc(a.source)+'</span>':'')+(a.date?'<span class="media-date">'+esc(a.date)+'</span>':'')+'</span>'+
+        '<span class="media-title">'+esc(a.title)+'</span>'+
+        (a.excerpt?'<span class="media-excerpt">'+esc(a.excerpt)+'</span>':'')+
+        '<span class="media-more">Read ↗</span></a>';
+    }).join('');
+  } else {
+    ag.innerHTML=emptyState('Articles coming soon — posts from LinkedIn, Medium and the blog will appear here.');
+  }
+})();
+</script>
 <script>
 (function(){
   var r=document.documentElement, S=null;
@@ -265,6 +351,18 @@ var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
     paintAccent();
   });});
   paintMode(); paintAccent();
+})();
+</script>
+<script>
+(function(){ // mobile nav toggle + close on link click
+  var t=document.getElementById('navToggle'), l=document.getElementById('navLinks');
+  if(!t) return;
+  t.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open?'true':'false');
+    t.textContent=open?'✕':'☰';
+  });
+  l.addEventListener('click',function(e){ if(e.target.tagName==='A'){ l.classList.remove('open'); t.setAttribute('aria-expanded','false'); t.textContent='☰'; }});
 })();
 </script>
 </body>
