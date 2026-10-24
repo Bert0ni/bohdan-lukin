@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bohdan Lukin — Red Team Lead &amp; Offensive Security Engineer</title>
-<meta name="description" content="Bohdan Lukin is a Red Team Lead and penetration tester with 8+ years in offensive security — cloud red teaming (AWS, Azure, GCP), adversary simulation, and AV/EDR evasion. OSCP, OSCE³, CRTO, HTB CAPE. Based in Bratislava, Slovakia.">
+<meta name="description" content="Bohdan Lukin is a Red Team Lead and penetration tester with 10+ years in offensive security — cloud red teaming (AWS, Azure, GCP), adversary simulation, and AV/EDR evasion. OSCP, OSCE³, CRTO, HTB CAPE. Based in Bratislava, Slovakia.">
 <meta name="author" content="Bohdan Lukin">
 <meta name="keywords" content="Bohdan Lukin, Bohdan Lukin red team, penetration tester Bratislava, offensive security, red team lead, OSCP, OSCE3, CRTO, cloud security, adversary simulation, AV EDR evasion, AWS Azure GCP penetration testing">
 <link rel="canonical" href="https://bohdan-lukin.com/">
@@ -14,7 +14,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Bohdan Lukin — Red Team Lead &amp; Offensive Security Engineer">
-<meta property="og:description" content="Red Team Lead & penetration tester. 8+ years in offensive security — cloud red teaming, adversary simulation, AV/EDR evasion. OSCP · OSCE³ · CRTO · HTB CAPE.">
+<meta property="og:description" content="Red Team Lead & penetration tester. 10+ years in offensive security — cloud red teaming, adversary simulation, AV/EDR evasion. OSCP · OSCE³ · CRTO · HTB CAPE.">
 <meta property="og:url" content="https://bohdan-lukin.com/">
 <meta property="og:image" content="https://bohdan-lukin.com/assets/profile.png">
 <meta property="og:site_name" content="Bohdan Lukin">
@@ -22,13 +22,20 @@
 <meta property="profile:last_name" content="Lukin">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bohdan Lukin — Red Team Lead & Offensive Security Engineer">
-<meta name="twitter:description" content="8+ years offensive security. Cloud red teaming, adversary simulation, AV/EDR evasion. OSCP · OSCE³ · CRTO · HTB CAPE.">
+<meta name="twitter:description" content="10+ years offensive security. Cloud red teaming, adversary simulation, AV/EDR evasion. OSCP · OSCE³ · CRTO · HTB CAPE.">
 <meta name="twitter:image" content="https://bohdan-lukin.com/assets/profile.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+// Apply saved theme/accent before paint to avoid flash. Storage may be blocked.
+(function(){try{var r=document.documentElement,s=localStorage;
+var t=s.getItem('cv-theme'); if(t==='dark'||t==='light') r.setAttribute('data-theme',t);
+var a=s.getItem('cv-accent'); if(a&&a!=='blue') r.setAttribute('data-accent',a);
+}catch(e){}})();
+</script>
 
 <script type="application/ld+json">
 {
@@ -43,7 +50,7 @@
   "address": { "@type": "PostalAddress", "addressLocality": "Bratislava", "addressCountry": "Slovakia" },
   "nationality": "Ukrainian",
   "knowsLanguage": ["English", "Ukrainian", "Russian"],
-  "description": "Red Team Lead and penetration tester with 8+ years of specialized experience in offensive security, cloud-native adversary simulation, and enterprise-scale penetration testing across AWS, Azure/Entra, and GCP.",
+  "description": "Red Team Lead and penetration tester with 10+ years of specialized experience in offensive security, cloud-native adversary simulation, and enterprise-scale penetration testing across AWS, Azure/Entra, and GCP. 30+ industry certifications.",
   "knowsAbout": ["Red Team Operations","Penetration Testing","Cloud Security","Adversary Simulation","AV/EDR Evasion","AWS Security","Azure Security","GCP Security","Kubernetes Security","Web Application Security","API Security","Active Directory Security","MITRE ATT&CK","OWASP Top 10"],
   "sameAs": [
     "https://www.linkedin.com/in/bogdanlukin",
@@ -63,13 +70,27 @@
     {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"OAWSP — Offensive AWS Security Professional","recognizedBy":{"@type":"Organization","name":"CloudBreach"}},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"OAZSP — Offensive Azure Security Professional","recognizedBy":{"@type":"Organization","name":"CloudBreach"}},
     {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CARTE — Certified Red Team Expert for Azure","recognizedBy":{"@type":"Organization","name":"Altered Security"}},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"HTB CAPE — Certified Active Directory Pentesting Expert","recognizedBy":{"@type":"Organization","name":"Hack The Box"}}
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"HTB CAPE — Certified Active Directory Pentesting Expert","recognizedBy":{"@type":"Organization","name":"Hack The Box"}},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CRT — CREST Registered Penetration Tester","recognizedBy":{"@type":"Organization","name":"CREST"}},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CPSA — CREST Practitioner Security Analyst","recognizedBy":{"@type":"Organization","name":"CREST"}},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CRTP — Certified Red Team Professional","recognizedBy":{"@type":"Organization","name":"Altered Security"}},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CRTE — Certified Red Team Expert","recognizedBy":{"@type":"Organization","name":"Altered Security"}},
+    {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"CARTP — Certified Azure Red Team Professional","recognizedBy":{"@type":"Organization","name":"Altered Security"}}
   ]
 }
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
+<div class="theme-bar" role="group" aria-label="Theme settings">
+  <button class="mode" id="modeBtn" title="Toggle light/dark" aria-label="Toggle light or dark mode">🌙</button>
+  <span class="sep" aria-hidden="true"></span>
+  <button class="sw blue" data-accent="blue" title="Blue" aria-label="Blue accent" aria-pressed="true"></button>
+  <button class="sw green" data-accent="green" title="Green" aria-label="Green accent" aria-pressed="false"></button>
+  <button class="sw crimson" data-accent="crimson" title="Crimson" aria-label="Crimson accent" aria-pressed="false"></button>
+  <button class="sw purple" data-accent="purple" title="Purple" aria-label="Purple accent" aria-pressed="false"></button>
+</div>
 
 <header class="hero" id="top">
   <div class="wrap hero-inner">
@@ -78,7 +99,7 @@
       <p class="eyebrow">Red Team · Offensive Security · Cloud</p>
       <h1>Bohdan Lukin</h1>
       <p class="role">Chief Security Testing Engineer — Red&nbsp;Team&nbsp;Lead</p>
-      <p class="tagline">8+ years breaking enterprise cloud, identity and applications — then showing teams how to defend them.</p>
+      <p class="tagline">10+ years breaking enterprise cloud, identity and applications — then showing teams how to defend them.</p>
       <ul class="cert-chips">
         <li>OSCP</li><li>OSCE³</li><li>OSEP</li><li>OSWE</li><li>OSED</li><li>CRTO</li><li>CRTL</li><li>HTB&nbsp;CAPE</li><li>CARTE</li>
       </ul>
@@ -101,10 +122,10 @@
   <section aria-labelledby="stats-h">
     <h2 id="stats-h" class="sr-only">Key figures</h2>
     <div class="stats">
-      <div class="stat"><span class="num">8+</span><span class="lbl">Years in offensive security</span></div>
+      <div class="stat"><span class="num">10+</span><span class="lbl">Years in offensive security</span></div>
       <div class="stat"><span class="num">70+</span><span class="lbl">Red team engagements</span></div>
       <div class="stat"><span class="num">25+</span><span class="lbl">Engineers mentored</span></div>
-      <div class="stat"><span class="num">15</span><span class="lbl">Industry certifications</span></div>
+      <div class="stat"><span class="num">30+</span><span class="lbl">Industry certifications</span></div>
     </div>
   </section>
 
@@ -175,18 +196,18 @@
 
   <section aria-labelledby="certs-h">
     <h2 id="certs-h">Certifications</h2>
-    <p class="certs-note">Verified: <a href="https://certs.zeropointsecurity.co.uk/profile/bohdan-lukin/wallet" rel="noopener" target="_blank">credential wallet</a> · <a href="https://portal.offsec.com/public-profile/e0190982-2f36-11f0-9794-0ad45fbd5c7b" rel="noopener" target="_blank">OffSec profile</a></p>
+    <p class="certs-note">30+ credentials — each card links to its verification source. Full wallets: <a href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank">credential.net ↗</a> · <a href="https://certs.zeropointsecurity.co.uk/profile/bohdan-lukin/wallet" rel="noopener" target="_blank">Zero-Point ↗</a> · <a href="https://portal.offsec.com/public-profile/e0190982-2f36-11f0-9794-0ad45fbd5c7b" rel="noopener" target="_blank">OffSec ↗</a></p>
     <div class="cert-grid">
-      <div class="cert-group"><h3>OffSec</h3><ul><li>OSCE³ (OSEP · OSWE · OSED)</li><li>OSCP</li><li>OSWA</li><li>OSWP</li></ul></div>
-      <div class="cert-group"><h3>Zero-Point Security</h3><ul><li>CRTO — Red Team Operator</li><li>CRTL — Red Team Lead</li></ul></div>
-      <div class="cert-group"><h3>CloudBreach</h3><ul><li>OAWSP — Offensive AWS Security Pro</li><li>OAZSP — Offensive Azure Security Pro</li></ul></div>
-      <div class="cert-group"><h3>Altered Security</h3><ul><li>CARTE — Red Team Expert for Azure</li><li>CESP — AD CS</li><li>+ additional Altered Security certs</li></ul></div>
-      <div class="cert-group"><h3>Hack The Box</h3><ul><li>CAPE — Certified AD Pentesting Expert</li></ul></div>
-      <div class="cert-group"><h3>CyberWarFare Labs</h3><ul><li>OCO-AI · OWASP LLM Top 10</li><li>K8S-RTA · AD-RTS</li><li>CRTS v2 · CARTS · CGRTS</li></ul></div>
-      <div class="cert-group"><h3>Pentester Academy</h3><ul><li>CAWASP — Azure Web App Security Pro</li><li>PACES — Enterprise Security Specialist</li></ul></div>
-      <div class="cert-group"><h3>INE / Maldev / SEKTOR7</h3><ul><li>eCPTXv2 · eWPTX</li><li>Offensive Phishing Operations</li><li>RTO — Windows Evasion (SEKTOR7)</li></ul></div>
+      <a class="cert-group" href="https://portal.offsec.com/public-profile/e0190982-2f36-11f0-9794-0ad45fbd5c7b" rel="noopener" target="_blank"><h3>OffSec <span class="verify">verify ↗</span></h3><ul><li>OSCE³ (OSEP · OSWE · OSED)</li><li>OSCP</li><li>OSWA · OSWP</li></ul></a>
+      <a class="cert-group" href="https://certs.zeropointsecurity.co.uk/profile/bohdan-lukin/wallet" rel="noopener" target="_blank"><h3>Zero-Point Security <span class="verify">verify ↗</span></h3><ul><li>CRTO — Red Team Operator</li><li>CRTL — Red Team Lead</li></ul></a>
+      <a class="cert-group" href="https://badges.parchment.eu/public/assertions/mkussxq7Rwyj5hA4LoOrsA?identity__email=bogdan.lukin.private@gmail.com" rel="noopener" target="_blank"><h3>CloudBreach <span class="verify">verify ↗</span></h3><ul><li>OAWSP — Offensive AWS Security Pro</li><li>OAZSP — Offensive Azure Security Pro</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>Altered Security <span class="verify">verify ↗</span></h3><ul><li>CRTP · CRTE · CARTP</li><li>CARTE — Red Team Expert for Azure</li><li>CESP — AD CS</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>Hack The Box <span class="verify">verify ↗</span></h3><ul><li>CAPE — Certified AD Pentesting Expert</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>CyberWarFare Labs <span class="verify">verify ↗</span></h3><ul><li>OCO-AI · OWASP LLM Top 10</li><li>K8S-RTA · AD-RTS</li><li>CRTS v2 · CARTS · CGRTS</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>Pentester Academy <span class="verify">verify ↗</span></h3><ul><li>paCSP — Cloud Security Pro</li><li>paDSOP — DevSecOps Pro</li><li>PACES · CAWASP · RTSE</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>CREST <span class="verify">verify ↗</span></h3><ul><li>CRT — Registered Penetration Tester</li><li>CPSA — Practitioner Security Analyst</li></ul></a>
+      <a class="cert-group" href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank"><h3>INE / Maldev / SEKTOR7 <span class="verify">verify ↗</span></h3><ul><li>eCPTXv2 · eWPTXv2</li><li>Offensive Phishing Operations</li><li>RTO — Windows Evasion</li></ul></a>
     </div>
-    <p class="certs-note" style="margin-top:14px">Full wallet (36 credentials): <a href="https://www.credential.net/profile/bohdanlukin/wallet" rel="noopener" target="_blank">credential.net/profile/bohdanlukin</a></p>
   </section>
 
   <section aria-labelledby="comm-h">
@@ -215,5 +236,36 @@
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  var r=document.documentElement, S=null;
+  try{S=window.localStorage;}catch(e){}
+  var modeBtn=document.getElementById('modeBtn');
+  function currentMode(){
+    var t=r.getAttribute('data-theme');
+    if(t) return t;
+    return (window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';
+  }
+  function paintMode(){ modeBtn.textContent = currentMode()==='light' ? '☀️' : '🌙'; }
+  modeBtn.addEventListener('click',function(){
+    var next = currentMode()==='light' ? 'dark' : 'light';
+    r.setAttribute('data-theme',next);
+    try{S&&S.setItem('cv-theme',next);}catch(e){}
+    paintMode();
+  });
+  var sws=[].slice.call(document.querySelectorAll('.theme-bar .sw'));
+  function paintAccent(){
+    var a=r.getAttribute('data-accent')||'blue';
+    sws.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.accent===a ? 'true':'false');});
+  }
+  sws.forEach(function(b){ b.addEventListener('click',function(){
+    var a=b.dataset.accent;
+    if(a==='blue') r.removeAttribute('data-accent'); else r.setAttribute('data-accent',a);
+    try{S&&S.setItem('cv-accent',a);}catch(e){}
+    paintAccent();
+  });});
+  paintMode(); paintAccent();
+})();
+</script>
 </body>
 </html>
