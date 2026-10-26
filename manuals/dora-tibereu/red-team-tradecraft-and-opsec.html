@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tradecraft &amp; OPSEC · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html" class="active">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html">Rules of Engagement</a><a href="templates-rttr-template.html">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Red Team guides › Tradecraft &amp; OPSEC</div><h1 id="tradecraft--opsec">Tradecraft &amp; OPSEC</h1>
+<p>Original guide to red-team operational tradecraft and operations security, with the <strong>TIBER safety overlay</strong> that governs a regulated TLPT. Tradecraft here means operating like a real adversary while staying safe, controlled and deconflicted.</p>
+<h2 id="operating-picture">Operating picture<a class="anchor" href="#operating-picture">#</a></h2>
+<div class="mermaid">flowchart LR
+  OP[&quot;Operators&quot;] --&gt; RD[&quot;Redirectors&quot;]
+  RD --&gt; C2[&quot;C2 servers&quot;]
+  OP --&gt; PAY[&quot;Payloads and tooling&quot;]
+  C2 -. telemetry .-&gt; LOG[&quot;Oplog and evidence&quot;]
+  OP --&gt; DECON{&quot;Deconfliction with Control Team&quot;}
+  DECON --&gt;|risky or blocked| CT[&quot;CT / TM approval · leg-up&quot;]</div>
+<h2 id="infrastructure">Infrastructure<a class="anchor" href="#infrastructure">#</a></h2>
+<ul><li><strong>Separation &amp;amp; redirection</strong> — operators never touch targets directly; traffic flows through redirectors to C2 so infrastructure is resilient and attributable only to the engagement.</li><li><strong>Attribution hygiene</strong> — categorised domains, aged infrastructure, TLS, realistic user-agents; avoid patterns that trivially burn the operation on day one.</li><li><strong>Segmented tooling</strong> — distinct infra per scenario where noise/sophistication differs, so one burnt channel doesn&#x27;t collapse the whole test.</li><li><strong>Channel diversity</strong> — primary + fallback C2 (e.g. HTTPS, DoH, long-haul) so a single detection doesn&#x27;t end access prematurely.</li></ul>
+<h2 id="opsec-principles">OPSEC principles<a class="anchor" href="#opsec-principles">#</a></h2>
+<ul><li><strong>Least noise for the goal</strong> — match tradecraft to the emulated actor; don&#x27;t be louder than the profile unless a scenario intends it.</li><li><strong>Know your indicators</strong> — understand what each tool/action emits (process, network, auth, file); prefer living-off-the-land where the profile fits.</li><li><strong>Evidence as you go</strong> — timestamped capture of each action (see <a href="red-team-operator-log.html">oplog</a>); OPSEC includes being able to <em>prove</em> what you did and did not do.</li><li><strong>Data minimisation</strong> — collect only what proves the flag; use test tokens/canaries, never real customer data; handle any sensitive artefact per the agreed data rules.</li></ul>
+<h2 id="the-tiber-safety-overlay-what-makes-a-tlpt-different">The TIBER safety overlay (what makes a TLPT different)<a class="anchor" href="#the-tiber-safety-overlay-what-makes-a-tlpt-different">#</a></h2>
+<div class="mermaid">flowchart TB
+  ACT[&quot;Proposed action&quot;] --&gt; CHK{&quot;In RTTP and RoE? Within risk appetite?&quot;}
+  CHK --&gt;|yes| GO[&quot;Execute and evidence&quot;]
+  CHK --&gt;|needs sign-off| APR[&quot;CT / TM approval&quot;]
+  CHK --&gt;|unsafe or blocked| STOP[&quot;Stop · deconflict · leg-up&quot;]
+  APR --&gt; GO
+  STOP --&gt; GO</div>
+<ul><li><strong>Blue team stays unaware</strong> — nothing should reveal the test; coordination is with the <strong>Control Team</strong>, not the defenders.</li><li><strong>Production-safe</strong> — no action outside the <a href="templates-rules-of-engagement.html">RoE</a> / RTTP; destructive impact is <strong>demonstrated, not caused</strong>.</li><li><strong>Deconfliction</strong> — a standing channel to the CT to confirm &quot;was that us?&quot; and to pause on real incidents or unexpected risk.</li><li><strong>Leg-ups</strong> — when a path is blocked and continuation isn&#x27;t safely/meaningfully possible, request a documented leg-up (pre-agreed triggers/deadlines) so later defences are still tested.</li><li><strong>Stop conditions</strong> — defined up front; the CTL can suspend the test; limited purple teaming may be used to continue safely. See <a href="methodology-safety-and-risk.html">safety &amp;amp; risk</a>.</li></ul>
+<h2 id="evasion--principle-not-recipe">Evasion — principle, not recipe<a class="anchor" href="#evasion--principle-not-recipe">#</a></h2>
+<p>Emulate the <strong>detection-evasion sophistication of the profiled actor</strong> (e.g. AMSI/ETW-aware, LOLBins, egress blending) to test whether controls detect that class of behaviour — the aim is to <strong>measure the defence</strong>, not to &quot;win&quot;. Tie every evasive choice back to the threat profile and the learning goal, and record it for the Replay/Purple discussion.</p>
+<p>Related: <a href="red-team-threat-profile-emulation.html">threat-profile emulation</a> · <a href="red-team-operator-log.html">operator log</a> · <a href="methodology-red-team-method.html">red team method</a>.</p>
+<hr>
+<p><em>Concept credit: red-team tradecraft &amp;amp; OPSEC practice as popularised by Joe Vest &amp;amp; James Tubberville — see <a href="https://redteam.guide">RedTeam.Guide</a> and their book (further reading in the <a href="red-team.html">section index</a>). Text and diagrams here are original and TIBER-aligned.</em></p><div class="pager"><a href="red-team-goal-planning.html"><div class="n">← Previous</div><div class="t">Goal planning</div></a><a class="next" href="red-team-threat-profile-emulation.html"><div class="n">Next →</div><div class="t">Threat-profile emulation</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

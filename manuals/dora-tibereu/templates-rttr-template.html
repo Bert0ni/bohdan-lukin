@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Team Test Report (Annex V) · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html">Rules of Engagement</a><a href="templates-rttr-template.html" class="active">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Templates › Red Team Test Report (Annex V)</div><h1 id="red-team-test-report-rttr--template">Red Team Test Report (RTTR) — TEMPLATE</h1>
+<blockquote><p>Basis: <strong>ECB TIBER-EU Red Team Test Report Guidance, January 2025</strong> (<code>../assets/source/ecb-rttr-guidance-2025.pdf</code>), §2 &quot;Required content&quot; + §3 considerations, mirroring the binding <strong>DORA TLPT RTS, Annex V</strong> (Reg. (EU) 2025/1190, <code>../assets/source/Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.md</code>). Owner: RT / RTTM. Due to the CT <strong>within 4 weeks</strong> of the end of active testing (TIBER-EU 2025). Feeds TSR and Remediation Plan. Copy per engagement; do not edit this blank.</p></blockquote>
+<hr>
+<h2 id="part-a--ecb-2-compliance-spine-the-rttr-shall-include-at-least-all-of-these">Part A — ECB §2 compliance spine (the RTTR <em>shall</em> include at least ALL of these)<a class="anchor" href="#part-a--ecb-2-compliance-spine-the-rttr-shall-include-at-least-all-of-these">#</a></h2>
+<ul><li class="task"><input type="checkbox" disabled > <strong>A1 — Information on the performed attack</strong>, including: the targeted <strong>CIFs</strong> and the ICT systems/processes/technologies supporting them (as identified in the RTTP) · a <strong>summary of each scenario</strong> · <strong>flags reached and not reached</strong> · <strong>attack paths</strong> followed successfully and unsuccessfully · <strong>TTPs</strong> used successfully and unsuccessfully · <strong>deviations from the RTTP</strong> (if any) · <strong>leg-ups granted</strong> (if any).</li><li class="task"><input type="checkbox" disabled > <strong>A2 — All actions the testers are aware of that were performed by the BT</strong> to reconstruct the attack and mitigate its effects.</li><li class="task"><input type="checkbox" disabled > <strong>A3 — Discovered vulnerabilities and other findings</strong>, including: description and <strong>criticality</strong> · <strong>root-cause analysis</strong> of successful attacks · <strong>recommendations for remediation</strong>, each with a <strong>remediation-priority</strong> indication.</li></ul>
+<blockquote><p>§3 considerations: write a <strong>management summary</strong> in layman&#x27;s terms for senior management/Board; a per-scenario <strong>storyline</strong> (end-to-end, in/through/out where relevant, MITRE ATT&amp;CK-mapped, flags/objectives vs the CIA triad, deviations, leg-ups); then <strong>findings</strong>, <strong>provisional root cause analysis</strong>, <strong>recommendations</strong>, <strong>artefacts</strong>, and a <strong>confidentiality</strong> handling note.</p></blockquote>
+<hr>
+<h2 id="part-b--drafting-layout">Part B — Drafting layout<a class="anchor" href="#part-b--drafting-layout">#</a></h2>
+<h2 id="1-document-control">1. Document control<a class="anchor" href="#1-document-control">#</a></h2>
+<p>Version · classification · author (RTTM) · reviewers · distribution · change history.</p>
+<h2 id="2-executive-summary">2. Executive summary<a class="anchor" href="#2-executive-summary">#</a></h2>
+<p>Outcome vs objectives/flags · key risks · headline detection/response observations · priority recommendations.</p>
+<h2 id="3-scope--methodology">3. Scope &amp; methodology<a class="anchor" href="#3-scope--methodology">#</a></h2>
+<p>CIFs, flags, scenarios, approach; reference to SSD, TTIR, RTTP.</p>
+<h2 id="4-executed-scenarios">4. Executed scenarios<a class="anchor" href="#4-executed-scenarios">#</a></h2>
+<p>Per scenario: narrative, attack path taken, result (flag achieved / not), timeline.</p>
+<h2 id="5-ttps-used">5. TTPs used<a class="anchor" href="#5-ttps-used">#</a></h2>
+<p>Mapped to MITRE ATT&amp;CK; successful vs unsuccessful; what was detected.</p>
+<h2 id="6-flags">6. Flags<a class="anchor" href="#6-flags">#</a></h2>
+<p>Status of each flag (achieved / partial / not) with evidence references.</p>
+<h2 id="7-deviations--leg-ups">7. Deviations &amp; leg-ups<a class="anchor" href="#7-deviations--leg-ups">#</a></h2>
+<p>All approved deviations and leg-ups: what, why, when, who approved.</p>
+<h2 id="8-evidence">8. Evidence<a class="anchor" href="#8-evidence">#</a></h2>
+<p>Key evidence with timestamps and references to the evidence register.</p>
+<h2 id="9-vulnerabilities--root-causes">9. Vulnerabilities &amp; root causes<a class="anchor" href="#9-vulnerabilities--root-causes">#</a></h2>
+<p>Findings, severity, root-cause analysis (not just symptoms). Draft one card per finding with the <a href="templates-finding-template.html">finding template</a> and roll them up into the finding register here.</p>
+<h2 id="10-detection--response-observations">10. Detection &amp; response observations<a class="anchor" href="#10-detection--response-observations">#</a></h2>
+<p>What the defence saw/missed (input to Replay/Purple and BTTR comparison).</p>
+<h2 id="11-recommendations">11. Recommendations<a class="anchor" href="#11-recommendations">#</a></h2>
+<p>Root-cause-oriented, prioritised; input to the entity&#x27;s Remediation Plan; resilience roadmap.</p>
+<h2 id="12-appendices">12. Appendices<a class="anchor" href="#12-appendices">#</a></h2>
+<p>Detailed evidence, IOC/TTP tables, tool/infrastructure notes, cleanup confirmation.</p><div class="pager"><a href="templates-rules-of-engagement.html"><div class="n">← Previous</div><div class="t">Rules of Engagement</div></a><a class="next" href="templates-finding-template.html"><div class="n">Next →</div><div class="t">Finding card + register</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

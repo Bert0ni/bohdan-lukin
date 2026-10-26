@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example TTIR — Meridian Bank Europe</title>
+<meta name="description" content="Worked, fictional Targeted Threat Intelligence Report (TTIR) illustrating a TIBER-EU / DORA TLPT deliverable.">
+<link rel="stylesheet" href="assets/report.css">
+<script src="assets/theme.js"></script>
+</head>
+<body>
+<div class="wrap"><div class="doc">
+
+  <div class="tlp">
+    <span>TLP:AMBER+STRICT · Classification: Restricted</span>
+    <span class="right fiction">⚠ FICTIONAL EXAMPLE — illustrative only, no real entity or data</span>
+  </div>
+  <div class="crumbs"><a href="index.html">TIBER-EU Hub</a> › Examples › Targeted Threat Intelligence Report</div>
+
+  <h1>Targeted Threat Intelligence Report (TTIR)</h1>
+  <p class="sub">Project <b>IRONMARK</b> · Meridian Bank Europe, a.s. · TIBER-EU / DORA TLPT · v1.0</p>
+
+  <table class="kv">
+    <tr><th>Entity (fictional)</th><td>Meridian Bank Europe, a.s. — significant credit institution, HQ Bratislava (SK)</td></tr>
+    <tr><th>TLPT codename</th><td>PROJECT IRONMARK</td></tr>
+    <tr><th>Author</th><td>Threat Intelligence Provider (TIP) — TI stream lead</td></tr>
+    <tr><th>Reviewers / approval</th><td>Control Team (CT/CTL) · Test Manager (TM) — <i>CT &amp; TM attest to this TTIR before testing proceeds</i></td></tr>
+    <tr><th>Research period</th><td>2026-08-10 → 2026-09-18 (6 weeks)</td></tr>
+    <tr><th>Basis</th><td>ECB TTIR Guidance (Jan 2025) §2; DORA TLPT RTS (Reg. (EU) 2025/1190) Annex III; TIBER-NO v1.2 structure</td></tr>
+    <tr><th>Distribution</th><td>CT, TM/TLPT authority, RT (RTTM) on handover. Shared with the entity CTI team <b>after</b> the test.</td></tr>
+  </table>
+
+  <div class="toc">
+    <b>Contents</b>
+    <ol>
+      <li><a href="#es">Executive summary</a></li>
+      <li><a href="#scope">Scope &amp; intelligence requirements</a></li>
+      <li><a href="#biz">Business overview (intelligence perspective)</a></li>
+      <li><a href="#gtl">Threat-landscape analysis</a></li>
+      <li><a href="#footprint">Targeted intelligence &amp; digital footprint</a></li>
+      <li><a href="#actors">Threat-actor assessment &amp; prioritisation</a></li>
+      <li><a href="#profiles">Selected threat-actor profiles</a></li>
+      <li><a href="#longlist">Scenario longlist &amp; selection</a></li>
+      <li><a href="#scenarios">Selected end-to-end scenarios</a></li>
+      <li><a href="#mapping">CIF · scenario · flag mapping</a></li>
+      <li><a href="#gaps">Intelligence gaps &amp; assumptions</a></li>
+      <li><a href="#reval">Scope &amp; flag re-validation</a></li>
+      <li><a href="#handover">TI-to-RT handover</a></li>
+      <li><a href="#appendix">Appendix — evidence &amp; scoring method</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <h2 id="es">1 · Executive summary</h2>
+  <p class="lead">Meridian Bank Europe operates CIFs of clear systemic relevance to the Slovak and
+  wider EU payments ecosystem. Intelligence gathered over six weeks indicates the entity is a
+  credible target for (i) financially-motivated organised crime pursuing payment fraud,
+  (ii) a state-nexus actor pursuing disruptive pre-positioning against payment availability in the
+  current geopolitical climate, and (iii) a data-theft/extortion crew targeting cardholder data.</p>
+  <div class="kpis">
+    <div class="kpi"><div class="n">3</div><div class="l">CIFs in scope</div></div>
+    <div class="kpi"><div class="n">7→3</div><div class="l">scenario longlist → shortlist</div></div>
+    <div class="kpi"><div class="n">3</div><div class="l">prioritised threat actors</div></div>
+    <div class="kpi"><div class="n">7</div><div class="l">material footprint findings</div></div>
+  </div>
+  <p><b>Most significant footprint findings:</b> valid-looking employee credentials for a payments-operations
+  engineer in commodity infostealer logs; an internet-exposed, fingerprintable remote-access gateway;
+  a contractor's public code repository leaking CI configuration and a cloud-key pattern; and an
+  active look-alike domain with mail records configured. Collectively these lower the barrier to
+  initial access via phishing and external exploitation.</p>
+  <p><b>Recommended scenarios (A/I/C coverage):</b> SC-A — payment-instruction manipulation
+  (<span class="tag aspect">Integrity</span>); SC-B — cardholder-data exfiltration
+  (<span class="tag aspect">Confidentiality</span>); SC-C — pre-positioning to disrupt internet
+  banking (<span class="tag aspect">Availability</span>). A forward-looking Scenario&nbsp;X
+  (AI-assisted deepfake vishing of treasury) is retained as an option for the RT phase.</p>
+
+  <!-- 2 -->
+  <h2 id="scope">2 · Scope &amp; intelligence requirements <span class="faint">(ECB §2 A1)</span></h2>
+  <table>
+    <thead><tr><th>Element</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>CIFs in scope</td><td>CIF-1 SEPA / instant-payment processing · CIF-2 Card issuing &amp; authorisation (CDE) · CIF-3 Internet &amp; mobile banking (retail deposit access)</td></tr>
+      <tr><td>Geographical location</td><td>Primary data centres SK (Bratislava, Košice); branch presence CZ, AT, DE; IaaS region EU-Central</td></tr>
+      <tr><td>Official EU language in use</td><td>Slovak (customer-facing); English (internal/technical)</td></tr>
+      <tr><td>Relevant ICT third-party providers</td><td>Helvetia Core Systems AG (core-banking SaaS) · PayBridge Ltd (card-processing gateway) · Aurora Cloud (IaaS) · NordDesk MSP (managed SOC / service desk)</td></tr>
+      <tr><td>Research period</td><td>2026-08-10 → 2026-09-18 (passive collection throughout; one gated active-recon request — see §11)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Intelligence requirements (PIRs) were derived from the SSD CIFs/flags and tracked in the
+  <a href="example-ti-scoping-questionnaire-meridian-bank.html">scoping questionnaire</a>, Part 4.</p>
+
+  <!-- 3 -->
+  <h2 id="biz">3 · Business overview from an intelligence perspective</h2>
+  <p>Meridian Bank Europe is a mid-to-large universal bank (fictional) with ~1.8m retail customers and a
+  growing instant-payments business. It is designated systemically relevant at national level; a
+  sustained outage of its SEPA Instant rail or card authorisation would have cross-border knock-on
+  effects for merchants and correspondent banks. Core banking runs on a vendor SaaS (Helvetia); card
+  authorisation is partly delegated to PayBridge; infrastructure is hybrid (on-prem DCs + Aurora Cloud).</p>
+  <ul>
+    <li><b>Why it is an interesting target:</b> concentration of real-time payment flows; cardholder-data
+      environment; public profile during an EU instant-payments mandate rollout.</li>
+    <li><b>Interdependencies:</b> heavy reliance on four ICT third parties (above); SOC/helpdesk outsourced
+      to NordDesk (a potential supply-chain route).</li>
+    <li><b>Geopolitical exposure:</b> headquartered in a front-line EU/NATO state; elevated state-nexus
+      interest in regional financial-sector disruption.</li>
+    <li><b>Client base:</b> predominantly domestic retail + SME; a treasury desk handling correspondent flows.</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2 id="gtl">4 · Threat-landscape analysis <span class="faint">(ECB §2 A3)</span></h2>
+  <p>No national Generic Threat Landscape (GTL) was available for this jurisdiction; the TIP therefore
+  developed a general landscape view for the entity (per ECB §3.1).</p>
+  <table>
+    <thead><tr><th>Dimension</th><th>Assessment relevant to Meridian</th></tr></thead>
+    <tbody>
+      <tr><td>Geopolitical</td><td>Heightened state-nexus activity against EU critical infrastructure and financial services; disruptive and pre-positioning operations observed regionally. Raises availability/integrity risk to payment rails.</td></tr>
+      <tr><td>Economic</td><td>Mature cybercrime-as-a-service economy: initial-access brokers, infostealer-log markets, and ransomware/extortion affiliates actively monetise financial-sector access.</td></tr>
+      <tr><td>Technological / sector</td><td>EU instant-payments mandate increases real-time exposure; continued targeting of remote-access edge devices and identity/OAuth consent abuse; third-party/MSP compromise as a recurring entry path.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 5 -->
+  <h2 id="footprint">5 · Targeted intelligence &amp; digital footprint <span class="faint">(ECB §2 A2)</span></h2>
+  <p>Attack surface of people, processes and technology, assessed per CIF. All items collected
+  <b>passively</b> except where marked; nothing performed here could alert the Blue Team.</p>
+  <table>
+    <thead><tr><th>#</th><th>Finding</th><th>Relevance (CIF)</th><th>Why it matters</th><th>Sev.</th><th>Conf.</th></tr></thead>
+    <tbody>
+      <tr><td>F-1</td><td>3 employee credential pairs in commodity infostealer logs, incl. a <b>payments-operations engineer</b></td><td>CIF-1</td><td>Plausible valid SSO creds → phishing/MFA-fatigue initial access to payment ops</td><td><span class="tag sev-high">High</span></td><td>Medium</td></tr>
+      <tr><td>F-2</td><td>Internet-exposed remote-access gateway (NetScaler-class), version fingerprinted</td><td>CIF-1/3</td><td>Edge device with a known-vulnerable version class → external exploitation route</td><td><span class="tag sev-high">High</span></td><td>High</td></tr>
+      <tr><td>F-3</td><td>Contractor public GitHub repo leaking CI config + an Aurora Cloud key <i>pattern</i></td><td>CIF-3</td><td>Potential cloud foothold / CI poisoning; confirms tech stack</td><td><span class="tag sev-high">High</span></td><td>Medium</td></tr>
+      <tr><td>F-4</td><td>Look-alike domain <code>meridian-bank[.]eu</code> registered 2026-07, MX records set</td><td>all</td><td>Phishing / BEC infrastructure staged against staff and customers</td><td><span class="tag sev-med">Medium</span></td><td>High</td></tr>
+      <tr><td>F-5</td><td>LinkedIn enumeration of payments &amp; treasury team (12 roles)</td><td>CIF-1</td><td>Target list for spear-phishing / vishing / deepfake pretexting</td><td><span class="tag sev-med">Medium</span></td><td>High</td></tr>
+      <tr><td>F-6</td><td>Exposed management/RDP interface attributed to third party <b>PayBridge</b></td><td>CIF-2</td><td>Supply-chain route into the card-authorisation path</td><td><span class="tag sev-med">Medium</span></td><td>Medium</td></tr>
+      <tr><td>F-7</td><td>Dark-web broker advert referencing "access to a Slovak bank"</td><td>all</td><td>Possible access-for-sale; <i>unconfirmed attribution to Meridian</i></td><td><span class="tag sev-med">Medium</span></td><td>Low</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 6 -->
+  <h2 id="actors">6 · Threat-actor assessment &amp; prioritisation <span class="faint">(ECB §2 A4)</span></h2>
+  <p>Actor classes were assessed against the entity, then specific actors named and scored on
+  <b>capability × intent</b> (method in the <a href="#appendix">appendix</a>). The three highest
+  threat-severity profiles were taken forward.</p>
+  <table>
+    <thead><tr><th>Actor (fictional)</th><th>Class</th><th>Capability</th><th>Intent</th><th>Threat</th><th>Decision</th></tr></thead>
+    <tbody>
+      <tr><td><b>COINREAPER</b></td><td>Organised crime (payment fraud)</td><td>High</td><td>High</td><td><span class="tag sev-high">High</span></td><td>Selected → SC-A</td></tr>
+      <tr><td><b>VELLUMLEAK</b></td><td>Ransomware / double-extortion</td><td>High</td><td>High</td><td><span class="tag sev-high">High</span></td><td>Selected → SC-B</td></tr>
+      <tr><td><b>GALEFROST</b></td><td>State-nexus APT (disruptive)</td><td>Very high</td><td>Medium-High</td><td><span class="tag sev-high">High</span></td><td>Selected → SC-C</td></tr>
+      <tr><td>TIDERISE</td><td>Hacktivist (DDoS/defacement)</td><td>Low</td><td>Medium</td><td><span class="tag sev-low">Low</span></td><td>Excluded — low learning value; nuisance DDoS only</td></tr>
+      <tr><td>Insider (malicious)</td><td>Insider</td><td>Medium</td><td>Low</td><td><span class="tag sev-info">Low</span></td><td>Excluded — not top severity; parked as SC-05</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Actor → CIF motivation matrix</h3>
+  <table>
+    <thead><tr><th>Actor</th><th>CIF-1 Payments</th><th>CIF-2 Cards (CDE)</th><th>CIF-3 Internet banking</th></tr></thead>
+    <tbody>
+      <tr><td>COINREAPER</td><td>Financial gain — fraudulent transfers</td><td>Financial gain — card cash-out</td><td>—</td></tr>
+      <tr><td>VELLUMLEAK</td><td>Extortion leverage</td><td>Theft &amp; sale of cardholder data</td><td>Staging / encryption leverage</td></tr>
+      <tr><td>GALEFROST</td><td>Disruption of payment rail</td><td>—</td><td>Disruption of customer access (impact/signalling)</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 7 -->
+  <h2 id="profiles">7 · Selected threat-actor profiles <span class="faint">(ECB §2 A4; Norges §3.4)</span></h2>
+
+  <h3>COINREAPER — organised crime, payment fraud</h3>
+  <table class="kv">
+    <tr><th>Motivation</th><td>Financial gain</td></tr>
+    <tr><th>Goals / intent</th><td>Manipulate payment instructions / initiate fraudulent SEPA transfers at scale</td></tr>
+    <tr><th>Sophistication</th><td>High — bespoke tooling, hands-on-keyboard operators, finance-specific tradecraft</td></tr>
+    <tr><th>Agility</th><td>Adaptable — rapidly swaps infrastructure and TTPs</td></tr>
+    <tr><th>Perseverance</th><td>Motivated — pursues high-value targets over weeks/months</td></tr>
+    <tr><th>Purpose</th><td>Direct — moves purposefully toward payment-operations systems</td></tr>
+  </table>
+
+  <h3>VELLUMLEAK — ransomware / double-extortion affiliate</h3>
+  <table class="kv">
+    <tr><th>Motivation</th><td>Financial gain via data theft + extortion</td></tr>
+    <tr><th>Goals / intent</th><td>Exfiltrate cardholder/PII data; establish encryption leverage</td></tr>
+    <tr><th>Sophistication</th><td>High — buys initial access, uses commodity + living-off-the-land</td></tr>
+    <tr><th>Agility</th><td>Adaptable</td></tr>
+    <tr><th>Perseverance</th><td>Opportunistic-to-motivated — follows the data</td></tr>
+    <tr><th>Purpose</th><td>Meandering-to-direct — broad presence first, then locates the CDE</td></tr>
+  </table>
+
+  <h3>GALEFROST — state-nexus APT (disruptive)</h3>
+  <table class="kv">
+    <tr><th>Motivation</th><td>Geopolitical — disruptive pre-positioning / signalling</td></tr>
+    <tr><th>Goals / intent</th><td>Obtain and hold a position enabling disruption of payment availability</td></tr>
+    <tr><th>Sophistication</th><td>Very high — nation-state resources, custom implants, supply-chain capability</td></tr>
+    <tr><th>Agility</th><td>Adaptable, patient</td></tr>
+    <tr><th>Perseverance</th><td>Highly motivated — long dwell times</td></tr>
+    <tr><th>Purpose</th><td>Direct toward CIF, but patient and stealthy</td></tr>
+  </table>
+
+  <!-- 8 -->
+  <h2 id="longlist">8 · Scenario longlist &amp; selection</h2>
+  <p>Longlist of seven high-level scenarios covering every CIF; the CTL selected three on TIP
+  recommendation + TM input + RTT feasibility, ensuring A/I/C coverage with ≤1 Scenario&nbsp;X.</p>
+  <table>
+    <thead><tr><th>ID</th><th>Actor → objective</th><th>CIF</th><th>Aspect</th><th>Decision &amp; rationale</th></tr></thead>
+    <tbody>
+      <tr><td><b>SC-01</b></td><td>COINREAPER manipulates SEPA batch for fraud</td><td>CIF-1</td><td>Integrity</td><td><b>Selected → SC-A</b> — highest-severity threat-led integrity case</td></tr>
+      <tr><td><b>SC-02</b></td><td>VELLUMLEAK exfiltrates cardholder data from CDE</td><td>CIF-2</td><td>Confidentiality</td><td><b>Selected → SC-B</b> — covers confidentiality + third-party path</td></tr>
+      <tr><td><b>SC-03</b></td><td>GALEFROST pre-positions to disrupt internet banking</td><td>CIF-3</td><td>Availability</td><td><b>Selected → SC-C</b> — covers availability + state-nexus profile</td></tr>
+      <tr><td>SC-04</td><td>COINREAPER card cash-out / ATM</td><td>CIF-2</td><td>Integrity</td><td>Rejected — overlaps SC-01; lower marginal learning</td></tr>
+      <tr><td>SC-05</td><td>Malicious insider alters payment limits</td><td>CIF-1</td><td>Integrity</td><td>Rejected — below top threat severity; parked</td></tr>
+      <tr><td>SC-06</td><td>Hacktquist DDoS of IB front-end</td><td>CIF-3</td><td>Availability</td><td>Rejected — not threat-led depth; low learning</td></tr>
+      <tr><td>SC-07</td><td>GALEFROST + AI deepfake vishing of treasury</td><td>CIF-1</td><td>Integrity</td><td><b>Scenario X candidate</b> — retained as optional RT-phase conversion</td></tr>
+    </tbody>
+  </table>
+
+  <!-- 9 -->
+  <h2 id="scenarios">9 · Selected end-to-end scenarios <span class="faint">(ECB §2 A5/A6)</span></h2>
+
+  <div class="scenario">
+    <h3>SC-A — COINREAPER targets Meridian payment processing for financial gain <span class="tag aspect">Integrity</span></h3>
+    <p><b>Threat level:</b> Capability High · Intent High · <span class="tag sev-high">Threat High</span> · <b>Flag:</b> FLAG-1 · <b>CIF:</b> CIF-1</p>
+    <div class="phase"><span class="ph">Prepare</span><span>Weaponise payments-ops creds (F-1); stage look-alike domain (F-4); profile targets (F-5).</span></div>
+    <div class="phase"><span class="ph">Infiltrate (in)</span><span>Spear-phish + OAuth consent abuse / MFA fatigue → initial foothold on an ops workstation.</span></div>
+    <div class="phase"><span class="ph">Through</span><span>Credential access + lateral movement toward the payment-operations segment; discover the SEPA gateway.</span></div>
+    <div class="phase"><span class="ph">Execute (out)</span><span>Introduce/alter a <b>canary</b> payment instruction in the gateway to prove integrity impact (no real funds moved); clean up.</span></div>
+    <h4>MITRE ATT&amp;CK mapping</h4>
+    <table>
+      <thead><tr><th>Phase</th><th>Tactic</th><th>Technique (ID)</th></tr></thead>
+      <tbody>
+        <tr><td>In</td><td>Initial Access</td><td>Phishing (T1566) · Valid Accounts (T1078)</td></tr>
+        <tr><td>In</td><td>Credential Access</td><td>MFA Request Generation (T1621)</td></tr>
+        <tr><td>Through</td><td>Discovery / Lateral Movement</td><td>Remote Services (T1021) · Account Discovery (T1087)</td></tr>
+        <tr><td>Out</td><td>Impact</td><td>Data Manipulation — Transmitted (T1565.002)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="scenario">
+    <h3>SC-B — VELLUMLEAK exfiltrates cardholder data <span class="tag aspect">Confidentiality</span></h3>
+    <p><b>Threat level:</b> Capability High · Intent High · <span class="tag sev-high">Threat High</span> · <b>Flag:</b> FLAG-2 · <b>CIF:</b> CIF-2</p>
+    <div class="phase"><span class="ph">Prepare</span><span>Acquire access via broker (F-7, low conf.) or exploit the exposed edge gateway (F-2).</span></div>
+    <div class="phase"><span class="ph">Infiltrate (in)</span><span>External exploitation of the remote-access gateway → foothold; or third-party route via PayBridge (F-6).</span></div>
+    <div class="phase"><span class="ph">Through</span><span>LOLBins + credential reuse; locate and cross the boundary into the card-data environment (CDE).</span></div>
+    <div class="phase"><span class="ph">Execute (out)</span><span>Read access to a defined set of <b>test tokens</b> in the card datastore to prove confidentiality impact; stage (not perform) exfiltration.</span></div>
+    <h4>MITRE ATT&amp;CK mapping</h4>
+    <table>
+      <thead><tr><th>Phase</th><th>Tactic</th><th>Technique (ID)</th></tr></thead>
+      <tbody>
+        <tr><td>In</td><td>Initial Access</td><td>Exploit Public-Facing Application (T1190) · Trusted Relationship (T1199)</td></tr>
+        <tr><td>Through</td><td>Defense Evasion / Lateral</td><td>LOLBins — System Binary Proxy (T1218) · Lateral Tool Transfer (T1570)</td></tr>
+        <tr><td>Out</td><td>Collection / Exfiltration</td><td>Data from Information Repositories (T1213) · Exfil Over C2 (T1041, staged only)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="scenario">
+    <h3>SC-C — GALEFROST pre-positions to disrupt internet banking <span class="tag aspect">Availability</span></h3>
+    <p><b>Threat level:</b> Capability Very High · Intent Medium-High · <span class="tag sev-high">Threat High</span> · <b>Flag:</b> FLAG-3 · <b>CIF:</b> CIF-3</p>
+    <div class="phase"><span class="ph">Prepare</span><span>Target the MSP/supply chain (NordDesk) and the contractor key leak (F-3).</span></div>
+    <div class="phase"><span class="ph">Infiltrate (in)</span><span>Supply-chain / trusted-relationship access, or cloud foothold via leaked CI/key pattern.</span></div>
+    <div class="phase"><span class="ph">Through</span><span>Stealthy persistence; map the internet-banking delivery chain (front-end, gateway, dependencies).</span></div>
+    <div class="phase"><span class="ph">Execute (out)</span><span>Demonstrate a <b>position</b> from which the IB front-end could be disrupted — proven, <b>not executed</b>.</span></div>
+    <h4>MITRE ATT&amp;CK mapping</h4>
+    <table>
+      <thead><tr><th>Phase</th><th>Tactic</th><th>Technique (ID)</th></tr></thead>
+      <tbody>
+        <tr><td>In</td><td>Initial Access</td><td>Supply Chain Compromise (T1195) · Trusted Relationship (T1199)</td></tr>
+        <tr><td>Through</td><td>Persistence</td><td>Valid Accounts (T1078) · Implant Internal Image / Create Account (T1136)</td></tr>
+        <tr><td>Out</td><td>Impact (demonstrated)</td><td>Endpoint/Service Denial of Service (T1499) · Network DoS (T1498) — capability shown only</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="note"><b>Scenario X (optional):</b> SC-07 — GALEFROST augmented with AI-assisted deepfake
+  vishing of the treasury desk — is retained as a forward-looking option. Per the RTS it may be
+  activated as the one non-threat-led scenario during active testing with CT + TM + RTT agreement.</p>
+
+  <!-- 10 -->
+  <h2 id="mapping">10 · CIF · scenario · flag mapping</h2>
+  <table>
+    <thead><tr><th>CIF</th><th>Scenario</th><th>Flag</th><th>Security aspect</th></tr></thead>
+    <tbody>
+      <tr><td>CIF-1 SEPA / instant payments</td><td>SC-A</td><td>FLAG-1 — controlled proof of altering a payment instruction (canary; no real funds)</td><td><span class="tag aspect">Integrity</span></td></tr>
+      <tr><td>CIF-2 Card issuing &amp; authorisation</td><td>SC-B</td><td>FLAG-2 — proof of unauthorised read of a defined test-token set in the card datastore</td><td><span class="tag aspect">Confidentiality</span></td></tr>
+      <tr><td>CIF-3 Internet &amp; mobile banking</td><td>SC-C</td><td>FLAG-3 — proof of a position enabling disruption of the IB front-end (demonstrated)</td><td><span class="tag aspect">Availability</span></td></tr>
+    </tbody>
+  </table>
+  <p class="muted">Authenticity aspect is not a primary flag here but is implicated in SC-A (instruction origin) and noted for RTTP consideration.</p>
+
+  <!-- 11 -->
+  <h2 id="gaps">11 · Intelligence gaps &amp; assumptions</h2>
+  <ul>
+    <li>Dark-web access advert (F-7) could not be confirmed as Meridian — <b>low confidence</b>; treated as indicative only.</li>
+    <li>Internal network topology inferred from leaked CI config (F-3) + edge fingerprinting; not validated internally (TI phase is passive).</li>
+    <li>One <b>gated active-recon</b> request was approved by CT + TM and executed by the RTT to confirm the edge-gateway version (F-2); no other active steps were taken, and the Blue Team was not alerted.</li>
+    <li>Assumes the CDE boundary and payment-ops segmentation are as documented in the SSD; to be validated during active testing.</li>
+  </ul>
+
+  <!-- 12 -->
+  <h2 id="reval">12 · Scope &amp; flag re-validation</h2>
+  <p>On the basis of the selected scenarios the TIP proposes the following to the CT/TM
+  (ECB §1.3 re-validation):</p>
+  <ul>
+    <li><b>FLAG-1:</b> confirm the "canary payment instruction" mechanism and the exact acceptance
+      criterion (what proves integrity impact without moving real funds).</li>
+    <li><b>FLAG-2:</b> confirm the defined test-token record set and that production cardholder data is
+      out of reach by design.</li>
+    <li><b>FLAG-3:</b> confirm "demonstrated position" (capability shown, not executed) as the
+      availability acceptance criterion — no live disruption.</li>
+    <li>Consider adding an authenticity sub-objective to FLAG-1 (payment-instruction origin).</li>
+  </ul>
+
+  <!-- 13 -->
+  <h2 id="handover">13 · TI-to-RT handover</h2>
+  <p>On CT/TM attestation, the following transfer to the RTTM and are logged in the TI-to-RT handover
+  register: this TTIR, the scenario matrix, the evidence register extract (below), and the per-scenario
+  MITRE mappings. The TIP remains available for additional intelligence during active testing; TI/RT
+  separation is maintained (single-provider model).</p>
+
+  <!-- Appendix -->
+  <h2 id="appendix">Appendix — evidence register extract &amp; scoring method</h2>
+  <h3>A. Evidence register extract (TI sources)</h3>
+  <table>
+    <thead><tr><th>Source ID</th><th>Type</th><th>Description</th><th>Finding</th><th>Confidence</th></tr></thead>
+    <tbody>
+      <tr><td>TI-SRC-003</td><td>Infostealer-log market</td><td>Commodity stealer logs referencing corporate SSO domain</td><td>F-1</td><td>Medium</td></tr>
+      <tr><td>TI-SRC-007</td><td>Internet scan data (passive)</td><td>Historical banner/version for perimeter remote-access gateway</td><td>F-2</td><td>High</td></tr>
+      <tr><td>TI-SRC-011</td><td>Public code repository</td><td>Contractor repo with CI config + cloud-key pattern</td><td>F-3</td><td>Medium</td></tr>
+      <tr><td>TI-SRC-014</td><td>Domain / DNS records</td><td>Look-alike domain registration + MX</td><td>F-4</td><td>High</td></tr>
+      <tr><td>TI-SRC-019</td><td>Professional social media</td><td>Payments/treasury team enumeration</td><td>F-5</td><td>High</td></tr>
+      <tr><td>TI-SRC-022</td><td>Dark-web forum</td><td>Access-for-sale advert (unattributed)</td><td>F-7</td><td>Low</td></tr>
+    </tbody>
+  </table>
+  <h3>B. Actor scoring method</h3>
+  <p>Each candidate actor scored on <b>Capability</b> (resources, tooling, sector tradecraft) and
+  <b>Intent</b> (motivation, targeting rationale, recent activity) on a 4-point scale
+  (Low / Medium / High / Very high). <b>Threat</b> = the combined profile; the three highest-severity
+  profiles were taken into scenarios. Source reliability + information credibility recorded per item
+  (Admiralty A–F / 1–6); analytic judgements carry an explicit confidence level. Full scoring lives in
+  the scenario matrix and evidence register.</p>
+
+  <div class="footer">
+    <b>FICTIONAL EXAMPLE.</b> Meridian Bank Europe, its people, systems, providers and all findings are
+    invented for illustration. Threat-actor codenames (COINREAPER, VELLUMLEAK, GALEFROST, TIDERISE) are
+    fictional archetypes, not real groups. Built from the TIBER-EU knowledge base templates — see the
+    <a href="templates-ttir-template.html">TTIR template</a> and
+    <a href="ti-methodology.html">TI methodology</a>. TLP:AMBER+STRICT when populated with real data.
+  </div>
+
+</div></div>
+</body>
+</html>

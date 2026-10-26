@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threat-profile emulation · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html" class="active">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html">Rules of Engagement</a><a href="templates-rttr-template.html">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Red Team guides › Threat-profile emulation</div><h1 id="threat-profile-emulation">Threat-profile emulation</h1>
+<p>Original guide to turning a TTIR threat actor into an <strong>emulation plan</strong> the red team can execute — the bridge between intelligence and operations. It consumes the actor profiles from the <a href="templates-ttir-template.html">TTIR</a> and feeds the <a href="templates-rttp-template.html">RTTP</a>.</p>
+<h2 id="from-actor-to-emulation-plan">From actor to emulation plan<a class="anchor" href="#from-actor-to-emulation-plan">#</a></h2>
+<div class="mermaid">flowchart LR
+  TA[&quot;TTIR actor profile&quot;] --&gt; CAP[&quot;Capabilities and intent&quot;]
+  CAP --&gt; TTP[&quot;Signature TTPs mapped to ATT&amp;CK&quot;]
+  TTP --&gt; PLAN[&quot;Emulation plan: do / don&#x27;t&quot;]
+  PLAN --&gt; PATH[&quot;Attack paths to flags&quot;]
+  PATH --&gt; RTTP[&quot;RTTP scenario&quot;]</div>
+<h2 id="what-a-threat-profile-captures-emulation-card">What a threat profile captures (emulation card)<a class="anchor" href="#what-a-threat-profile-captures-emulation-card">#</a></h2>
+<table><thead><tr><th>Field</th><th>Content</th></tr></thead><tbody><tr><td><strong>Actor / archetype</strong></td><td>Named actor or class being emulated (and the scenario it drives)</td></tr><tr><td><strong>Motivation &amp;amp; intent</strong></td><td>Why they target this entity / CIF</td></tr><tr><td><strong>Capability</strong></td><td>Sophistication, resources, custom vs commodity tooling</td></tr><tr><td><strong>Signature TTPs</strong></td><td>Concrete ATT&amp;CK techniques the actor is known/assessed to use</td></tr><tr><td><strong>Initial-access preference</strong></td><td>Phish, exploit public-facing, supply chain, valid accounts…</td></tr><tr><td><strong>Post-exploitation style</strong></td><td>Direct-to-objective vs broad presence; stealth vs speed</td></tr><tr><td><strong>Tooling to emulate</strong></td><td>Representative C2 / tooling of comparable behaviour (not necessarily theirs)</td></tr><tr><td><strong>&quot;Do&quot; list</strong></td><td>Behaviours in-profile to reproduce</td></tr><tr><td><strong>&quot;Don&#x27;t&quot; list</strong></td><td>Out-of-profile behaviours to avoid (keeps the test realistic)</td></tr><tr><td><strong>Attribution tells</strong></td><td>Characteristic indicators worth reproducing to test detections</td></tr></tbody></table>
+<h2 id="backward--vs-forward-looking">Backward- vs forward-looking<a class="anchor" href="#backward--vs-forward-looking">#</a></h2>
+<p>Emulate <strong>evidence-based</strong> behaviour (what the actor has done) but, as the TTIR allows, add <strong>plausible forward-looking</strong> TTPs (what they could do next) — keeping the two clearly distinguished, and keeping flexibility for any <strong>Scenario X</strong>.</p>
+<h2 id="fidelity-vs-feasibility">Fidelity vs feasibility<a class="anchor" href="#fidelity-vs-feasibility">#</a></h2>
+<p>Aim for the <strong>highest fidelity that is safe and feasible</strong> in the window. Where exact tooling is impractical or unsafe, emulate the <em>behaviour and indicators</em> that exercise the same defences — the goal is to measure detection/response of that TTP class, not to run the actor&#x27;s actual malware.</p>
+<blockquote><p>Emulation stays inside the <a href="templates-rules-of-engagement.html">RoE</a> and <a href="methodology-safety-and-risk.html">safety &amp;amp; risk</a> rules. Each emulated TTP maps to a flag/CIF and is recorded in the <a href="red-team-operator-log.html">oplog</a> for the Replay/Purple discussion.</p></blockquote>
+<hr>
+<p><em>Concept credit: adversary-emulation and threat-profile practice as popularised by Joe Vest &amp;amp; James Tubberville — see <a href="https://redteam.guide">RedTeam.Guide</a> and their book (further reading in the <a href="red-team.html">section index</a>). Text here is original; consult the originals for their treatment.</em></p><div class="pager"><a href="red-team-tradecraft-and-opsec.html"><div class="n">← Previous</div><div class="t">Tradecraft &amp; OPSEC</div></a><a class="next" href="red-team-operator-log.html"><div class="n">Next →</div><div class="t">Operator log (oplog)</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

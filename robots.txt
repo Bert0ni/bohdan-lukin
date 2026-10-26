@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /manuals/
 Sitemap: https://bohdan-lukin.com/sitemap.xml

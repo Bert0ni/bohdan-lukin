@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rules of Engagement · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html" class="active">Rules of Engagement</a><a href="templates-rttr-template.html">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Templates › Rules of Engagement</div><h1 id="rules-of-engagement-roe--template">Rules of Engagement (RoE) — TEMPLATE</h1>
+<blockquote><p>Owner: RT / RTTM, agreed with CT/TM. Attached to / referenced by the RTTP. Copy per engagement.</p></blockquote>
+<h2 id="1-parties--contacts">1. Parties &amp; contacts<a class="anchor" href="#1-parties--contacts">#</a></h2>
+<p>RTTM · operators · CTL · CT · TM. Named contacts + out-of-band <strong>deconfliction channel</strong>.</p>
+<h2 id="2-testing-windows">2. Testing windows<a class="anchor" href="#2-testing-windows">#</a></h2>
+<p>Permitted days/hours, blackout/change-freeze periods, time zone.</p>
+<h2 id="3-permitted-actions">3. Permitted actions<a class="anchor" href="#3-permitted-actions">#</a></h2>
+<p>Explicitly allowed techniques, targets, and scope boundaries.</p>
+<h2 id="4-prohibited-actions">4. Prohibited actions<a class="anchor" href="#4-prohibited-actions">#</a></h2>
+<p>Explicitly disallowed techniques (e.g. destructive actions, DoS, real data exfiltration, actions affecting out-of-scope or third-party systems, safety-of-life risks).</p>
+<h2 id="5-approval-requirements">5. Approval requirements<a class="anchor" href="#5-approval-requirements">#</a></h2>
+<p>Which actions need separate CT/TM approval before execution; how approval is requested/recorded.</p>
+<h2 id="6-stop-conditions--emergency-stop">6. Stop conditions &amp; emergency stop<a class="anchor" href="#6-stop-conditions--emergency-stop">#</a></h2>
+<p>List of stop conditions; emergency-stop procedure: cease → preserve → notify CT/TM → await. (See <a href="methodology-safety-and-risk.html"><code>../methodology/safety-and-risk.md</code></a>.)</p>
+<h2 id="7-deconfliction-procedure">7. Deconfliction procedure<a class="anchor" href="#7-deconfliction-procedure">#</a></h2>
+<p>How CT confirms whether activity is the test; response window; escalation.</p>
+<h2 id="8-data-handling--confidentiality">8. Data handling &amp; confidentiality<a class="anchor" href="#8-data-handling--confidentiality">#</a></h2>
+<p>How evidence/data is captured, stored, transmitted, retained and destroyed; need-to-know.</p>
+<h2 id="9-leg-ups">9. Leg-ups<a class="anchor" href="#9-leg-ups">#</a></h2>
+<p>When/how leg-ups may be requested; approval + documentation requirements; constraints.</p>
+<h2 id="10-communications--status-cadence">10. Communications &amp; status cadence<a class="anchor" href="#10-communications--status-cadence">#</a></h2>
+<p>Weekly status format, attendees, channels; incident/urgent escalation.</p>
+<h2 id="11-cleanup">11. Cleanup<a class="anchor" href="#11-cleanup">#</a></h2>
+<p>Removal of implants/infrastructure/accounts; confirmation to CT.</p>
+<h2 id="12-sign-off">12. Sign-off<a class="anchor" href="#12-sign-off">#</a></h2>
+<p>RTTM · CT · TM · date/version.</p><div class="pager"><a href="templates-rttp-template.html"><div class="n">← Previous</div><div class="t">Red Team Test Plan (Annex IV)</div></a><a class="next" href="templates-rttr-template.html"><div class="n">Next →</div><div class="t">Red Team Test Report (Annex V)</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

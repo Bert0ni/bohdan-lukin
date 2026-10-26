@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TI Methodology (TIP) — TIBER-EU / DORA</title>
+<meta name="description" content="Operational threat-intelligence methodology for the TIP role under TIBER-EU / DORA TLPT.">
+<link rel="stylesheet" href="assets/report.css">
+<script src="assets/theme.js"></script>
+</head>
+<body>
+<div class="wrap"><div class="doc">
+
+  <div class="tlp">
+    <span>TLP:CLEAR · Internal methodology</span>
+    <span class="right">Basis: ECB TTIR Guidance (Jan 2025) · DORA TLPT RTS Annex III · TIBER-NO v1.2</span>
+  </div>
+  <div class="crumbs"><a href="index.html">TIBER-EU Hub</a> › TI Methodology (TIP)</div>
+
+  <h1>Threat Intelligence Methodology — working as the TIP</h1>
+  <p class="sub">How the TI stream runs the threat-intelligence phase (~4–6 weeks) and produces a defensible TTIR document set.</p>
+
+  <p class="note">The output is <b>not a raw OSINT dump</b> — it is contextualised reasoning about which
+  attacks are realistic for <i>this</i> entity. <b>Target intelligence</b> (the entity's reality) and
+  <b>threat intelligence</b> (who attacks, and how) alternate and supplement each other, and are never
+  analysed in silos. Recognised CTI tradecraft is used <i>in support of</i> — never instead of — the
+  ECB/RTS requirements.</p>
+
+  <div class="toc">
+    <b>Contents</b>
+    <ol>
+      <li><a href="#cycle">The engagement as an intelligence cycle</a></li>
+      <li><a href="#phases">Six operational sub-phases</a></li>
+      <li><a href="#streams">What we collect — the two streams</a></li>
+      <li><a href="#passive">Passive vs active collection (the hard rule)</a></li>
+      <li><a href="#ethics">Ethics, legality &amp; OPSEC</a></li>
+      <li><a href="#grading">Source grading &amp; confidence</a></li>
+      <li><a href="#actors">Threat-actor assessment &amp; profiling</a></li>
+      <li><a href="#scenarios">Scenario development</a></li>
+      <li><a href="#report">TTIR structure &amp; report examples</a></li>
+      <li><a href="#tooling">Passive OSINT tooling</a></li>
+    </ol>
+  </div>
+
+  <h2 id="cycle">1 · The engagement as an intelligence cycle</h2>
+  <p>The TI phase runs as a mini intelligence cycle — <b>direction → collection → processing →
+  analysis → dissemination</b> — instantiated as six working steps inside the ~4–6 week window.
+  Supporting lenses: the <b>Diamond Model</b> (adversary–capability–infrastructure–victim) and
+  <b>F3EAD</b> for structuring collection and analysis.</p>
+
+  <h2 id="phases">2 · Six operational sub-phases</h2>
+  <table>
+    <thead><tr><th>#</th><th>Sub-phase</th><th>Key activities</th><th>Output</th></tr></thead>
+    <tbody>
+      <tr><td>A1</td><td><b>Direction</b> — kickoff, questionnaire &amp; requirements</td><td>Business-overview <b>session + questionnaire</b> (ECB Annex 1); set intelligence requirements (PIRs) from the SSD; agree OPSEC/deconfliction (no BT alerting)</td><td>Intake pack + PIR list</td></tr>
+      <tr><td>A2</td><td><b>Collection</b></td><td>Target (digital footprint per CIF) + threat (GTL, actors) streams in parallel; passive by default</td><td>Raw intelligence + evidence register</td></tr>
+      <tr><td>A3</td><td><b>Processing &amp; analysis</b></td><td>Contextualise CIFs &amp; flags; actor longlist → shortlist (capability × intent); modus operandi → MITRE ATT&amp;CK</td><td>Contextualised actors + TTPs</td></tr>
+      <tr><td>A4</td><td><b>Scenario development</b></td><td>Longlist (≥6) → shortlist (≥3); A/I/C coverage; ≤1 Scenario X</td><td>Scenario shortlist</td></tr>
+      <tr><td>A5</td><td><b>TTIR drafting + selection + re-validation</b></td><td>Draft per template; scenario-selection meeting (CTL selects); re-validate SSD flags; CT+TM attest</td><td>Approved TTIR</td></tr>
+      <tr><td>A6</td><td><b>Handover &amp; support</b></td><td>Deliver to RTTM + log in handover register; stay available; maintain TI/RT separation; post-test share with entity CTI team</td><td>Handover record</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="streams">3 · What we collect — the two streams</h2>
+  <h3>Target intelligence — the entity's digital footprint (per CIF)</h3>
+  <p>Attack surface of <b>people, processes and technologies</b>, both intentionally published and
+  unintentionally leaked: attack-surface &amp; CT-log mining, subdomain enumeration, tech
+  fingerprinting; shadow IT &amp; exposed cloud/management interfaces; look-alike/typo-squat domains;
+  leaked &amp; breach/infostealer credentials; people footprint (roles, privileged access, contact
+  details); third-party / supply-chain posture; and — where relevant — physical targeting information.</p>
+  <h3>Threat intelligence — who would attack, and how</h3>
+  <p><b>GTL</b> (use the jurisdiction's if published; otherwise develop a general view); geopolitical,
+  economic and technological/sector environment; relevant actors (OCGs, state-nexus, hacktivists,
+  insiders, supply-chain) with motivation/capability/campaign history; TTPs mapped to the latest
+  <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>.</p>
+  <h4>Intelligence input — the questions collection must answer (ECB §3.2.4)</h4>
+  <ul>
+    <li><b>Target environment:</b> what exposed information helps map the CIF-supporting network, locate CIFs, and find exploitable vulnerabilities? What infra has been targeted before? Which sector-critical vulnerabilities are likely present?</li>
+    <li><b>Social engineering:</b> which roles/people could be targeted; what contact details &amp; credentials are discoverable?</li>
+    <li><b>Third parties / MSPs:</b> how do they change posture; which have been or could be compromised, and how would that enable entity compromise?</li>
+  </ul>
+
+  <h2 id="passive">4 · Passive vs active collection — the hard rule</h2>
+  <table>
+    <thead><tr><th></th><th>Passive (default)</th><th>Active reconnaissance</th></tr></thead>
+    <tbody>
+      <tr><td><b>What</b></td><td>No observable interaction with the target's live systems/people: OSINT, CT logs, scan-data archives, breach dumps, dark web, ethical HUMINT</td><td>Direct, potentially observable interaction: scanning, probing, crafted contact, enumeration of the entity's assets</td></tr>
+      <tr><td><b>Who / when</b></td><td>TIP, throughout the TI phase</td><td><b>Only the RTT</b>, in the TI phase, <b>at the TIP's request and after CT + TM approval</b></td></tr>
+      <tr><td><b>Rule</b></td><td>—</td><td>Must <b>not alert the Blue Team</b> or reveal that a TIBER test is underway</td></tr>
+    </tbody>
+  </table>
+  <p class="note warn"><b>The TI phase must not tip off the Blue Team.</b> Any step risking disclosure is
+  prohibited unless gated through RTT + CT + TM. When in doubt, stay passive and record the gap as an
+  intelligence limitation.</p>
+
+  <h2 id="ethics">5 · Ethics, legality &amp; OPSEC</h2>
+  <ul>
+    <li>OSINT = overt/public. HUMINT = overt or covert from human sources, <b>always with documented ethical conduct</b> and within the law; no entrapment, no unlawful access.</li>
+    <li>Handle leaked credentials/PII lawfully; <b>never authenticate</b> with discovered credentials during TI.</li>
+    <li>OPSEC: attributable infrastructure, codename discipline, need-to-know, encrypted comms/data rooms (per the project charter).</li>
+  </ul>
+
+  <h2 id="grading">6 · Source grading &amp; confidence</h2>
+  <p>Record per source the <b>reliability</b> and the information's <b>credibility</b>
+  (Admiralty/NATO A–F / 1–6), and give each analytic judgement a confidence level (high/medium/low)
+  with reasoning — all in the evidence register, so selection is traceable, defensible and repeatable.</p>
+
+  <h2 id="actors">7 · Threat-actor assessment &amp; profiling</h2>
+  <ol>
+    <li><b>Categorise</b> actor classes vs this entity.</li>
+    <li><b>Name specific actors</b>, with evidence-based reasoning on motivation/intent and why they'd target these CIFs/flags.</li>
+    <li><b>Map actors → CIFs</b> with the motivation per cell (ECB §3.3.3 pattern).</li>
+    <li><b>Profile</b> shortlisted actors on: <b>Motivation · Goals/intent · Sophistication</b> (script-kiddie→nation-state) <b>· Agility</b> (inflexible→adaptable) <b>· Perseverance</b> (opportunistic→motivated) <b>· Purpose</b> (meandering→direct).</li>
+    <li><b>Threat level</b> = capability × intent; take the highest-severity profiles into scenarios.</li>
+    <li><b>Explain exclusions</b> — why other classes were dropped.</li>
+  </ol>
+
+  <h2 id="scenarios">8 · Scenario development</h2>
+  <ul>
+    <li><b>Longlist</b> (≥6; ~6–10): high-level, reconnaissance-based, targeting every CIF in scope.</li>
+    <li><b>Shortlist</b> (≥3), selected by the <b>CTL</b> on: TIP recommendation &amp; threat-led nature · TM input · RTT feasibility · entity size/complexity/risk · breadth/depth across CIFs · (multi-party) ≥1 scenario covering the ICT third party.</li>
+    <li><b>Mandatory coverage:</b> ≥1 each for <b>availability, integrity, confidentiality</b>; address <b>authenticity</b> where the flag does.</li>
+    <li><b>Scenario X:</b> ≤1 non-threat-led / forward-looking (hybrid, novel TTPs, AI/quantum/deepfake); can be set in TI or converted during active testing with CT+TM+RTT agreement.</li>
+    <li><b>Backward vs forward:</b> don't rely on history alone — forecast next moves, but keep evidence-based and hypothetical TTPs clearly distinct.</li>
+  </ul>
+  <h4>Scenario anatomy (per shortlisted scenario)</h4>
+  <p>Name (actor + goal) · threat level (capability/intent) · end-to-end path across
+  <b>prepare → infiltrate → entrench → execute</b> (RT's in → through → out) · mapping
+  actor → objective/flag → ATT&amp;CK tactic → technique → procedure · links to CIF, flag,
+  impact dimension (C/I/A/authenticity), evidence, confidence.</p>
+
+  <h2 id="report">9 · TTIR structure &amp; report examples</h2>
+  <p>No mandated format — any format is fine provided all ECB §2 / RTS Annex III content is present.</p>
+  <h4>ECB §2 / RTS Annex III content spine</h4>
+  <p>Scope of research · digital-footprint assessment · threat-landscape analysis
+  (geopolitical/economic/technological) · threat profiles · ≥3 end-to-end scenarios (A/I/C) ·
+  optional Scenario X.</p>
+  <h4>Norges TIBER-NO practical skeleton</h4>
+  <ol>
+    <li>Executive summary</li>
+    <li>Business overview from an intelligence perspective</li>
+    <li>Intelligence on the entity's digital presence</li>
+    <li>Threat actors — assessment → profiling</li>
+    <li>High-level threat scenarios — threat level + attack flow with TTPs</li>
+    <li>Appendices — TTP tables, OSINT raw data, scoring methodology</li>
+  </ol>
+  <p class="note">Worked example: see the fictional
+  <a href="example-ttir-meridian-bank.html">Meridian Bank TTIR</a> and its
+  <a href="example-ti-scoping-questionnaire-meridian-bank.html">scoping questionnaire</a>.</p>
+
+  <h2 id="tooling">10 · Passive OSINT tooling (indicative)</h2>
+  <p>Attack surface / DNS: crt.sh &amp; CT logs, Amass/subfinder, Shodan, Censys, FOFA.
+  People/footprint: social media, email-pattern tools, Maltego, SpiderFoot.
+  Breach/credential: HIBP, DeHashed, IntelX, infostealer-log feeds.
+  Dark web / closed sources: vetted CTI feeds, marketplace monitoring.
+  Always within the ethics/legal/OPSEC rules; prefer passive; record any active step as gated.</p>
+
+  <div class="footer">
+    HTML rendering of <code>methodology/threat-intelligence-method.md</code> from the TIBER-EU knowledge base.
+    Authoritative markdown remains in the repo. <a href="index.html">← Back to hub</a>
+  </div>
+
+</div></div>
+</body>
+</html>

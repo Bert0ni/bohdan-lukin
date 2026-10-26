@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example — TI Scoping Questionnaire (Meridian Bank)</title>
+<meta name="description" content="Worked, fictional TI scoping questionnaire / business-overview intake for a TIBER-EU engagement.">
+<link rel="stylesheet" href="assets/report.css">
+<script src="assets/theme.js"></script>
+</head>
+<body>
+<div class="wrap"><div class="doc">
+
+  <div class="tlp">
+    <span>TLP:AMBER+STRICT · Restricted</span>
+    <span class="right fiction">⚠ FICTIONAL EXAMPLE — illustrative only</span>
+  </div>
+  <div class="crumbs"><a href="index.html">TIBER-EU Hub</a> › Examples › TI Scoping Questionnaire</div>
+
+  <h1>TI Scoping Questionnaire &amp; Business-Overview Intake</h1>
+  <p class="sub">Project IRONMARK · Meridian Bank Europe, a.s. · completed at the start of the TI phase</p>
+
+  <table class="kv">
+    <tr><th>Completed by</th><td>Entity via CT/CTL</td></tr>
+    <tr><th>Structured &amp; analysed by</th><td>TIP (TI stream)</td></tr>
+    <tr><th>Basis</th><td>ECB TTIR Guidance Annex 1 "business overview input" + §3.2</td></tr>
+    <tr><th>Feeds</th><td><a href="example-ttir-meridian-bank.html">TTIR</a> §3 (business overview) &amp; §5 (digital footprint); §6 (actor assessment)</td></tr>
+  </table>
+
+  <h2>Part 1 · Business overview input <span class="faint">(ECB Annex 1 minimum set)</span></h2>
+  <table>
+    <thead><tr><th>Item</th><th>Entity response (fictional)</th></tr></thead>
+    <tbody>
+      <tr><td><b>Entity &amp; its CIFs; sector significance</b></td><td>Universal bank, ~1.8m retail customers; CIFs: SEPA/instant payments, card issuing &amp; authorisation, internet/mobile banking. Nationally systemic payment flows.</td></tr>
+      <tr><td><b>Own threat assessment + recent events</b></td><td>Prior credential-phishing waves against staff; one contained BEC attempt in 2025; elevated concern re: payment-rail disruption.</td></tr>
+      <tr><td><b>Systemic implications of C/I/A compromise</b></td><td>Integrity loss on payments → fraud + trust loss; confidentiality loss on CDE → regulatory + card-scheme impact; availability loss on IB → customer access outage, cross-border knock-on.</td></tr>
+      <tr><td><b>Business model &amp; org setup</b></td><td>Privately held; Board + ExCo; retail + SME + small treasury desk; revenue mainly net interest + card/payment fees.</td></tr>
+      <tr><td><b>Geographic presence</b></td><td>HQ Bratislava (SK); branches CZ, AT, DE; IaaS EU-Central region.</td></tr>
+      <tr><td><b>Interdependencies &amp; supply chain</b></td><td>Core banking SaaS (Helvetia, CH), card gateway (PayBridge, EU), IaaS (Aurora Cloud), SOC/helpdesk (NordDesk MSP).</td></tr>
+      <tr><td><b>Client types of foreign-intel interest</b></td><td>Predominantly domestic retail/SME; some correspondent relationships (characteristics only).</td></tr>
+      <tr><td><b>Niche markets</b></td><td>Regional instant-payments acceptance for SMEs.</td></tr>
+      <tr><td><b>R&amp;D / IP</b></td><td>In-house instant-payments orchestration layer (limited IP).</td></tr>
+      <tr><td><b>M&amp;A</b></td><td>Exploratory interest in a regional acquiring portfolio (high-level only).</td></tr>
+      <tr><td><b>Geopolitical exposure</b></td><td>HQ in a front-line EU/NATO state; elevated state-nexus interest in financial-sector disruption.</td></tr>
+      <tr><td><b>Third-party involvement in CIFs</b></td><td>Helvetia (core), PayBridge (card auth), NordDesk (SOC) all touch CIFs.</td></tr>
+      <tr><td><b>Domains &amp; IP ranges</b></td><td>Provided under separate restricted annex (apex + mail + IB domains; two /24 ranges).</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Part 2 · CIF / systems detail <span class="faint">(reconciles with the SSD)</span></h2>
+  <table>
+    <thead><tr><th>CIF</th><th>Sub-functions</th><th>Key systems</th><th>ICT third parties</th><th>Jurisdiction</th><th>Flag + aspect</th></tr></thead>
+    <tbody>
+      <tr><td>CIF-1 SEPA / instant payments</td><td>SCT Inst, batch SEPA</td><td>Payment gateway, orchestration layer</td><td>Helvetia</td><td>SK</td><td>FLAG-1 <span class="tag aspect">Integrity</span></td></tr>
+      <tr><td>CIF-2 Card issuing &amp; authorisation</td><td>Debit/credit auth, CDE</td><td>Auth switch, card datastore</td><td>PayBridge</td><td>SK, EU</td><td>FLAG-2 <span class="tag aspect">Confidentiality</span></td></tr>
+      <tr><td>CIF-3 Internet &amp; mobile banking</td><td>Retail deposit access</td><td>IB front-end, API gateway</td><td>Aurora Cloud, NordDesk</td><td>SK</td><td>FLAG-3 <span class="tag aspect">Availability</span></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Part 3 · Session logistics &amp; OPSEC</h2>
+  <ul>
+    <li><b>Business-overview session:</b> CTL + payments, cards &amp; IB SMEs; held 2026-08-12; classification Restricted.</li>
+    <li><b>Deconfliction &amp; secrecy:</b> Blue Team <b>not informed</b>; codename IRONMARK; need-to-know list of 6; encrypted data room + messaging agreed.</li>
+    <li><b>Sensitivity:</b> M&amp;A and client-characteristic items flagged commercially sensitive; shared verbally / in the restricted annex only.</li>
+    <li><b>Contacts:</b> CTL as single point of contact for TIP follow-ups during collection.</li>
+  </ul>
+
+  <h2>Part 4 · TIP intelligence requirements <span class="faint">(PIRs — TIP completes)</span></h2>
+  <table>
+    <thead><tr><th>Req</th><th>CIF</th><th>Intelligence question</th><th>Priority</th><th>Approach</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>IR-001</td><td>CIF-1</td><td>Exposed credentials / access for payments-ops staff?</td><td>High</td><td>passive</td><td>Answered → F-1</td></tr>
+      <tr><td>IR-002</td><td>CIF-1/3</td><td>Internet-facing remote-access / edge devices &amp; versions?</td><td>High</td><td>passive + 1 gated-active (version confirm)</td><td>Answered → F-2</td></tr>
+      <tr><td>IR-003</td><td>CIF-3</td><td>Leaked code / cloud keys revealing the IB/cloud stack?</td><td>High</td><td>passive</td><td>Answered → F-3</td></tr>
+      <tr><td>IR-004</td><td>all</td><td>Look-alike domains / phishing infrastructure staged?</td><td>Medium</td><td>passive</td><td>Answered → F-4</td></tr>
+      <tr><td>IR-005</td><td>CIF-1</td><td>Which payments/treasury staff are targetable for SE?</td><td>Medium</td><td>passive</td><td>Answered → F-5</td></tr>
+      <tr><td>IR-006</td><td>CIF-2</td><td>Third-party (PayBridge) exposure affecting card auth?</td><td>Medium</td><td>passive</td><td>Partially → F-6</td></tr>
+      <tr><td>IR-007</td><td>all</td><td>Access-for-sale chatter attributable to the entity?</td><td>Low</td><td>passive</td><td>Inconclusive → F-7 (low conf.)</td></tr>
+    </tbody>
+  </table>
+  <p class="note warn"><b>Active collection rule:</b> IR-002's version confirmation was the only active
+  step — performed by the RTT, approved by CT + TM, with no Blue-Team alerting. All other requirements
+  were answered passively; IR-006/IR-007 gaps are carried into the TTIR as limitations.</p>
+
+  <div class="footer">
+    <b>FICTIONAL EXAMPLE.</b> HTML rendering derived from
+    <code>templates/ti-scoping-questionnaire.md</code>. <a href="index.html">← Back to hub</a> ·
+    <a href="example-ttir-meridian-bank.html">See the resulting TTIR →</a>
+  </div>
+
+</div></div>
+</body>
+</html>

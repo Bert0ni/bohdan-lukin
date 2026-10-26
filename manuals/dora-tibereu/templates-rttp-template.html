@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Team Test Plan (Annex IV) · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html" class="active">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html">Rules of Engagement</a><a href="templates-rttr-template.html">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Templates › Red Team Test Plan (Annex IV)</div><h1 id="red-team-test-plan-rttp--template">Red Team Test Plan (RTTP) — TEMPLATE</h1>
+<blockquote><p>Basis: <strong>ECB TIBER-EU Red Team Test Plan Guidance, January 2025</strong> (<code>../assets/source/ecb-rttp-guidance-2025.pdf</code>), §2 &quot;Required content&quot; + §3 considerations, mirroring the binding <strong>DORA TLPT RTS, Annex IV</strong> (Reg. (EU) 2025/1190, <code>../assets/source/Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.md</code>). Owner: RT / RTTM. <strong>Approved by CT + TM before any active attack.</strong> Copy per engagement; do not edit this blank. Built from the approved SSD + TTIR + selected scenarios.</p></blockquote>
+<hr>
+<h2 id="part-a--ecb-2-compliance-spine-the-rttp-shall-include-all-of-these">Part A — ECB §2 compliance spine (the RTTP <em>shall</em> include ALL of these)<a class="anchor" href="#part-a--ecb-2-compliance-spine-the-rttp-shall-include-all-of-these">#</a></h2>
+<p>Prove completeness here; the drafting sections in Part B carry the detail.</p>
+<ul><li class="task"><input type="checkbox" disabled > <strong>A1 — Communication channels and procedures</strong> to be used.</li><li class="task"><input type="checkbox" disabled > <strong>A2 — TTPs allowed and not-allowed</strong> in the attack, including <strong>ethical boundaries for social engineering</strong> and <strong>how the privacy of involved parties is safeguarded</strong>.</li><li class="task"><input type="checkbox" disabled > <strong>A3 — Risk management measures</strong> to be followed by the RTT.</li><li class="task"><input type="checkbox" disabled > <strong>A4 — A description for each scenario</strong>, including: the simulated <strong>threat actor</strong> · their <strong>intent, motivation and goals</strong> · the <strong>target function(s)</strong> and supporting ICT system(s) · the targeted <strong>confidentiality, integrity, availability and authenticity</strong> aspects · the <strong>flags</strong>.</li><li class="task"><input type="checkbox" disabled > <strong>A5 — A detailed description of each expected attack path</strong>, including pre-requisites and possible <strong>leg-ups</strong> to be provided by the CT, with <strong>deadlines</strong> for their provision and potential usage.</li><li class="task"><input type="checkbox" disabled > <strong>A6 — Scheduling of red teaming activities</strong>, with time planning per scenario, at minimum split into the three tester phases: <strong>(i) in</strong> — entering the entity&#x27;s ICT systems · <strong>(ii) through</strong> — moving through them and executing actions on objectives · <strong>(iii) out</strong> — extracting from them.</li><li class="task"><input type="checkbox" disabled > <strong>A7 — Particularities of the entity&#x27;s infrastructure</strong> to be considered during testing.</li><li class="task"><input type="checkbox" disabled > <strong>A8 — Any additional information or resources</strong> the testers need to execute the scenarios.</li></ul>
+<blockquote><p>Red team composition (§3.2): disclose the full RTT composition, each member&#x27;s experience, roles and contact details; appoint a <strong>red team manager + deputy</strong> (the manager is the single point of contact for CT, TM and TIP); document that competencies match the scope. Any change to RTT composition must be communicated to the TM and CTL and captured in a revised RTTP.</p></blockquote>
+<hr>
+<h2 id="part-b--drafting-layout">Part B — Drafting layout<a class="anchor" href="#part-b--drafting-layout">#</a></h2>
+<h2 id="1-document-control">1. Document control<a class="anchor" href="#1-document-control">#</a></h2>
+<p>Version · classification · author (RTTM) · reviewers · CT approval · TM approval · distribution · change history.</p>
+<h2 id="2-objectives">2. Objectives<a class="anchor" href="#2-objectives">#</a></h2>
+<p>CIFs · attack objectives · flags (from SSD) · success criteria (vs objectives/flags <strong>and</strong> detection/response — not Domain Admin).</p>
+<h2 id="3-threat-scenarios">3. Threat scenarios<a class="anchor" href="#3-threat-scenarios">#</a></h2>
+<p>Selected scenarios from the TTIR with rationale.</p>
+<h2 id="4-attack-paths">4. Attack paths<a class="anchor" href="#4-attack-paths">#</a></h2>
+<p>Per scenario: technical path(s) to the flag, prerequisites, decision points, alternatives.</p>
+<h2 id="5-ttp-mapping">5. TTP mapping<a class="anchor" href="#5-ttp-mapping">#</a></h2>
+<p>MITRE ATT&amp;CK mapping and adversary tradecraft per path.</p>
+<h2 id="6-infrastructure--tooling">6. Infrastructure &amp; tooling<a class="anchor" href="#6-infrastructure--tooling">#</a></h2>
+<p>Red team infrastructure, C2, tooling, communications, data handling.</p>
+<h2 id="7-execution-schedule">7. Execution schedule<a class="anchor" href="#7-execution-schedule">#</a></h2>
+<p>Phases, sequence, parallelism, resources, milestones, dependencies.</p>
+<h2 id="8-risk-management">8. Risk management<a class="anchor" href="#8-risk-management">#</a></h2>
+<p>Production safety, stop conditions, mitigations, risk register linkage. (See <a href="methodology-safety-and-risk.html"><code>../methodology/safety-and-risk.md</code></a>.)</p>
+<h2 id="9-rules-of-engagement">9. Rules of Engagement<a class="anchor" href="#9-rules-of-engagement">#</a></h2>
+<p>Reference/attach the <a href="templates-rules-of-engagement.html">RoE</a>: permitted/prohibited actions.</p>
+<h2 id="10-communications">10. Communications<a class="anchor" href="#10-communications">#</a></h2>
+<p>CT/TM escalation paths, deconfliction channel, regular status cadence.</p>
+<h2 id="11-evidence">11. Evidence<a class="anchor" href="#11-evidence">#</a></h2>
+<p>Logging, timestamps, proof-of-objective approach, chain of custody. (See <a href="templates-evidence-register.html">evidence register</a>.)</p>
+<h2 id="12-contingencies">12. Contingencies<a class="anchor" href="#12-contingencies">#</a></h2>
+<p>Alternative paths, leg-ups (approval + documentation requirements), recovery/cleanup procedures.</p>
+<h2 id="13-approvals">13. Approvals<a class="anchor" href="#13-approvals">#</a></h2>
+<p>CT approval · TM approval · date/version. <strong>Active testing starts only after both.</strong></p><div class="pager"><a href="templates-ti-to-rt-handover-register.html"><div class="n">← Previous</div><div class="t">TI-to-RT handover register</div></a><a class="next" href="templates-rules-of-engagement.html"><div class="n">Next →</div><div class="t">Rules of Engagement</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

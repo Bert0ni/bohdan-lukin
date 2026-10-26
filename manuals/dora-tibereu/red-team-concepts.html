@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concepts (red vs pen vs vuln) · TIBER-EU Field Manual</title>
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Operator &amp; Lead Field Manual</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Concepts</div><a href="methodology-overview.html">Framework overview</a><a href="methodology-engagement-lifecycle.html">Engagement lifecycle</a><a href="methodology-threat-intelligence-method.html">Threat intelligence method (TIP)</a><a href="methodology-red-team-method.html">Red team method (RT)</a><a href="methodology-safety-and-risk.html">Safety &amp; risk</a><div class="cat">Red Team guides</div><a href="red-team.html">Red team guides — index</a><a href="red-team-concepts.html" class="active">Concepts (red vs pen vs vuln)</a><a href="red-team-goal-planning.html">Goal planning</a><a href="red-team-tradecraft-and-opsec.html">Tradecraft &amp; OPSEC</a><a href="red-team-threat-profile-emulation.html">Threat-profile emulation</a><a href="red-team-operator-log.html">Operator log (oplog)</a><a href="red-team-engagement-checklist.html">Engagement checklist</a><div class="cat">Guides · Phases</div><a href="phases-00-pre-engagement-rfp.html">Phase 0 · Pre-engagement / RFP</a><a href="phases-01-scoping-launch.html">Phase 1 · Scoping &amp; launch</a><a href="phases-02-threat-intelligence.html">Phase 2 · Threat intelligence</a><a href="phases-03-red-team-planning.html">Phase 3 · Red team planning</a><a href="phases-04-active-testing.html">Phase 4 · Active testing</a><a href="phases-05-reporting-replay-purple.html">Phase 5 · Reporting, replay &amp; purple</a><a href="phases-06-remediation-closure.html">Phase 6 · Remediation &amp; closure</a><div class="cat">Templates</div><a href="templates-project-charter-template.html">Project charter (RTS Annex I)</a><a href="templates-ssd-template.html">Scope Specification Document (Annex II)</a><a href="templates-ti-scoping-questionnaire.html">TI scoping questionnaire</a><a href="templates-ttir-template.html">TTIR (Annex III)</a><a href="templates-threat-actor-scenario-matrix.html">Threat-actor &amp; scenario matrix</a><a href="templates-evidence-register.html">Evidence register</a><a href="templates-ti-to-rt-handover-register.html">TI-to-RT handover register</a><a href="templates-rttp-template.html">Red Team Test Plan (Annex IV)</a><a href="templates-rules-of-engagement.html">Rules of Engagement</a><a href="templates-rttr-template.html">Red Team Test Report (Annex V)</a><a href="templates-finding-template.html">Finding card + register</a><a href="templates-bttr-template.html">Blue Team Test Report (Annex VI)</a><a href="templates-tsr-template.html">Test Summary Report (Annex VII)</a><div class="cat">Reference</div><a href="reference-dora-tiber-maps.html">DORA &amp; TIBER-EU — maps &amp; tables</a><a href="reference-framework-timeline.html">Framework timeline (2025)</a><a href="reference-roles-and-raci.html">Roles &amp; RACI</a><a href="reference-deliverables-matrix.html">Deliverables matrix</a><a href="reference-official-sources.html">Official sources</a><div class="cat">Definitions</div><a href="reference-glossary.html">Glossary</a><a href="reference-acronyms.html">Acronyms</a><div class="cat">Examples</div><a href="ti-methodology.html">TI methodology (HTML)</a><a href="example-ttir-meridian-bank.html">Worked TTIR — Meridian Bank</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Worked TI scoping questionnaire</a><div class="cat">Regulations</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Reg. (EU) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Reg. (EU) 2025/1190</a><div class="cat">About</div><a href="README.html">Repository overview (README)</a><a href="assets-source-SOURCES.html">Source documents index</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search the field manual…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Red Team guides › Concepts (red vs pen vs vuln)</div><h1 id="red-team-concepts">Red team concepts</h1>
+<p>Original overview of red teaming and where it sits among security-testing types, aligned to the TIBER-EU / DORA operating model. For detailed outside treatments see the <a href="red-team.html#further-reading-external--not-reproduced-here">further reading</a>.</p>
+<h2 id="what-red-teaming-is">What red teaming is<a class="anchor" href="#what-red-teaming-is">#</a></h2>
+<p>Red teaming is <strong>objective-driven adversary emulation</strong>: a trusted team reproduces the tactics, techniques and procedures (TTPs) of a realistic threat to test whether an organisation can <strong>prevent, detect and respond</strong> to it — end to end, across <strong>people, process and technology</strong>. Success is not &quot;did we get Domain Admin&quot;; it is <strong>what the defence saw and did</strong> against agreed objectives. In TIBER-EU this is formalised as flags tied to Critical or Important Functions (CIFs).</p>
+<h2 id="engagement-lifecycle-generic">Engagement lifecycle (generic)<a class="anchor" href="#engagement-lifecycle-generic">#</a></h2>
+<div class="mermaid">flowchart LR
+  A[&quot;Planning&quot;] --&gt; B[&quot;Reconnaissance&quot;]
+  B --&gt; C[&quot;Get in: initial access&quot;]
+  C --&gt; D[&quot;Stay in: persist and move&quot;]
+  D --&gt; E[&quot;Act on objectives: reach flags&quot;]
+  E --&gt; F[&quot;Reporting&quot;]
+  F --&gt; G[&quot;Lessons learned: purple and remediation&quot;]</div>
+<p>In a TIBER-EU engagement this generic arc is governed by CT/TM and maps onto the formal phases — see the <a href="methodology-engagement-lifecycle.html">TIBER-EU lifecycle</a> and <a href="phases-00-pre-engagement-rfp.html">phase guides</a>.</p>
+<h2 id="red-teaming-vs-penetration-testing-vs-vulnerability-assessment">Red teaming vs penetration testing vs vulnerability assessment<a class="anchor" href="#red-teaming-vs-penetration-testing-vs-vulnerability-assessment">#</a></h2>
+<p>Each manages a different kind of risk; they are complementary, not substitutes.</p>
+<table><thead><tr><th>Aspect</th><th>Vulnerability assessment</th><th>Penetration test</th><th>Red team engagement</th></tr></thead><tbody><tr><td><strong>Primary goal</strong></td><td>Enumerate known weaknesses</td><td>Prove exploitability of specific flaws</td><td>Measure detection &amp;amp; response against a realistic adversary</td></tr><tr><td><strong>Scope</strong></td><td>Broad, shallow</td><td>Defined targets/systems</td><td>Objective-led, whole-org attack surface</td></tr><tr><td><strong>Focus</strong></td><td>Technology</td><td>Technology (some process)</td><td>People + process + technology</td></tr><tr><td><strong>Knowledge</strong></td><td>Usually credentialed/known</td><td>Grey/known</td><td>Intel-led, low prior knowledge</td></tr><tr><td><strong>Defender awareness</strong></td><td>Aware</td><td>Often aware</td><td><strong>Unaware</strong> (blue team not told)</td></tr><tr><td><strong>Threat model</strong></td><td>Known CVEs/misconfig</td><td>Reachable attack surface</td><td><strong>Adversary emulation</strong> (specific actor TTPs)</td></tr><tr><td><strong>Typical duration</strong></td><td>Hours–days</td><td>~1–2 weeks</td><td>Weeks–months (TIBER active phase <strong>≥12 weeks</strong>)</td></tr><tr><td><strong>Measure of value</strong></td><td>Coverage / exposure reduced</td><td>Exploit impact demonstrated</td><td>Resilience: prevent / detect / respond outcomes</td></tr></tbody></table>
+<blockquote><p>In TIBER-EU the comparison matters for scoping conversations: a TLPT is a <strong>red team engagement</strong>, not a pen test. Avoid promising specific compromises up front — scenarios are intelligence-derived later in the <a href="templates-ttir-template.html">TTIR</a>.</p></blockquote>
+<h2 id="team-colours-and-the-tiber-mapping">Team colours and the TIBER mapping<a class="anchor" href="#team-colours-and-the-tiber-mapping">#</a></h2>
+<div class="mermaid">mindmap
+  root((Teams))
+    Red
+      Adversary emulation
+      TTPs and objectives
+      TIBER role RT and RTTM
+    Blue
+      Detection and response
+      SOC and IR
+      Not informed during test
+    Control Team
+      Governs and deconflicts
+      Risk and approvals
+      TIBER role CT CTL and Test Manager
+    Purple
+      Red plus Blue collaboration
+      Mandatory in TIBER closure</div>
+<ul><li><strong>Red</strong> — the offensive team (our <strong>RT / RTTM</strong>).</li><li><strong>Blue</strong> — the defenders (SOC/IR); in a TIBER test they are <strong>not told</strong> it is happening.</li><li><strong>White → Control Team</strong> — governs, approves risk and deconflicts; in TIBER the <strong>CT/CTL</strong> with the authority-side <strong>Test Manager</strong>. (TIBER renamed White Team → Control Team in 2025.)</li><li><strong>Purple</strong> — structured red+blue collaboration; <strong>mandatory</strong> in the TIBER closure phase.</li></ul>
+<h2 id="threat-led-vs-scenario-based">Threat-led vs scenario-based<a class="anchor" href="#threat-led-vs-scenario-based">#</a></h2>
+<ul><li><strong>Threat-led</strong> — scenarios derive from intelligence about actors that realistically target the entity (the TIBER default; ≥3 scenarios covering availability/integrity/confidentiality).</li><li><strong>Scenario X</strong> — at most one forward-looking, non-threat-led scenario (novel/emerging TTPs).</li></ul>
+<p>See <a href="red-team-goal-planning.html">goal planning</a> for turning objectives into flags, and <a href="red-team-threat-profile-emulation.html">threat-profile emulation</a> for turning an actor into an emulation plan.</p>
+<hr>
+<p><em>Concept credit: red-teaming concepts and the red/pen/vuln distinction as popularised by Joe Vest &amp;amp; James Tubberville — see <a href="https://redteam.guide">RedTeam.Guide</a> and their book (further reading in the <a href="red-team.html">section index</a>). Text, tables and diagrams here are original and TIBER-aligned.</em></p><div class="pager"><a href="red-team.html"><div class="n">← Previous</div><div class="t">Red team guides — index</div></a><a class="next" href="red-team-goal-planning.html"><div class="n">Next →</div><div class="t">Goal planning</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>
