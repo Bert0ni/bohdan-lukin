@@ -70,13 +70,14 @@ h1{font-size:clamp(2.1rem,5vw,3.1rem);margin:0;letter-spacing:-.02em;line-height
 .tagline{color:var(--muted);margin:0 0 16px;max-width:52ch}
 .cert-chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 20px}
 .cert-chips li{display:flex}
-.cert-chips li a{
+.cert-chips li a,.cert-chips li span{
   font-family:'JetBrains Mono',monospace;font-size:.78rem;font-weight:600;
   background:rgba(var(--accent-rgb),.12);border:1px solid rgba(var(--accent-rgb),.35);
   color:var(--chip-ink);padding:5px 10px;border-radius:999px;transition:.15s;text-decoration:none;
 }
 .cert-chips li a:hover{background:rgba(var(--accent-rgb),.26);border-color:var(--accent);
   color:var(--ink);text-decoration:none;transform:translateY(-1px)}
+.cert-chips li span{opacity:.6;cursor:default}
 .cta{display:flex;flex-wrap:wrap;gap:10px}
 .btn{
   display:inline-block;padding:10px 18px;border-radius:10px;font-weight:600;font-size:.92rem;
