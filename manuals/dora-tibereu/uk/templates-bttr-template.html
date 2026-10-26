@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Team Test Report (Додаток VI) · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="templates-bttr-template.html"><link rel="alternate" hreflang="en" href="../templates-bttr-template.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html" class="active">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../templates-bttr-template.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Шаблони › Blue Team Test Report (Додаток VI)</div><h1 id="blue-team-test-report-bttr--шаблон">Blue Team Test Report (BTTR) — ШАБЛОН</h1>
+<blockquote><p>Основа: <strong>Commission Delegated Regulation (EU) 2025/1190 (DORA TLPT RTS), Annex VI</strong> — «Content of the blue team test report (Article 12(4))» (<a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">full text</a>). Власник: <strong>Blue Team (BT)</strong> суб&#x27;єкта — <em>створює клієнт</em>. Ми <strong>не</strong> є авторами; цей бланк збережено, щоб RT/CT знали, що має містити BTTR, могли узгодити структуру кроків атаки RTTR із ним і перевірити якість перед replay/purple. Створюється у <strong>фазі завершення</strong>, після (і на основі) RTTR; завершується <strong>до replay</strong> для максимізації навчання.</p></blockquote>
+<hr>
+<h2 id="каркас-відповідності-annex-vi-bttr-має-містити-щонайменше">Каркас відповідності Annex VI (BTTR <em>має</em> містити, щонайменше)<a class="anchor" href="#каркас-відповідності-annex-vi-bttr-має-містити-щонайменше">#</a></h2>
+<ul><li class="task"><input type="checkbox" disabled > <strong>1 — За кожним кроком атаки, описаним тестувальниками в RTTR:</strong><ul><li>(a) перелік <strong>виявлених дій атаки</strong>;</li><li>(b) <strong>записи логів</strong>, що відповідають цим виявленням.</li></ul></li><li class="task"><input type="checkbox" disabled > <strong>2 — Оцінка</strong> знахідок і рекомендацій тестувальників.</li><li class="task"><input type="checkbox" disabled > <strong>3 — Докази атаки</strong> (зібрані BT).</li><li class="task"><input type="checkbox" disabled > <strong>4 — Аналіз першопричин BT</strong> успішних атак тестувальників.</li><li class="task"><input type="checkbox" disabled > <strong>5 — Висновки</strong> та виявлений потенціал для покращення.</li><li class="task"><input type="checkbox" disabled > <strong>6 — Перелік тем для розгляду в purple teaming.</strong></li></ul>
+<blockquote><p>BTTR — це <strong>покрокове дзеркало RTTR</strong>: він мапує, що захист побачив (чи пропустив) проти кожної дії RTT. Тримайте нумерацію кроків/TTP RTTR стабільною, щоб BT міг посилатися 1:1. Пункт 6 напряму живить <a href="phases-05-reporting-replay-purple.html">purple teaming</a> фази завершення.</p></blockquote>
+<hr>
+<h2 id="структура-оформлення-заповнює-bt">Структура оформлення (заповнює BT)<a class="anchor" href="#структура-оформлення-заповнює-bt">#</a></h2>
+<h2 id="1-контроль-документа">1. Контроль документа<a class="anchor" href="#1-контроль-документа">#</a></h2>
+<p>Версія · класифікація · автор (керівник BT) · рецензенти · розповсюдження · історія змін.</p>
+<h2 id="2-виявлення-та-реагування-за-кроком-атаки-annex-vi-1">2. Виявлення та реагування за кроком атаки <em>(Annex VI §1)</em><a class="anchor" href="#2-виявлення-та-реагування-за-кроком-атаки-annex-vi-1">#</a></h2>
+<table><thead><tr><th>Крок RTTR</th><th>Дія атаки (TTP / ATT&amp;CK)</th><th>Виявлено?</th><th>Джерело виявлення / засіб</th><th>Посилання на лог</th><th>Вжите реагування</th><th>Час до виявлення / реагування</th></tr></thead><tbody><tr><td></td><td></td><td>Так / Ні / Частково</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2 id="3-оцінка-знахідок-і-рекомендацій-rt-2">3. Оцінка знахідок і рекомендацій RT <em>(§2)</em><a class="anchor" href="#3-оцінка-знахідок-і-рекомендацій-rt-2">#</a></h2>
+<p>Погляд BT на кожну знахідку RTTR: згоден / частково згоден / оспорює, з обґрунтуванням і додатковим контекстом.</p>
+<h2 id="4-докази-атаки-зібрані-bt-3">4. Докази атаки, зібрані BT <em>(§3)</em><a class="anchor" href="#4-докази-атаки-зібрані-bt-3">#</a></h2>
+<p>Телеметрія, сповіщення, тікети, PCAP, сліди EDR, що зафіксував BT — за посиланням, а не вставлені сирими.</p>
+<h2 id="5-аналіз-першопричин-успішних-атак-4">5. Аналіз першопричин успішних атак <em>(§4)</em><a class="anchor" href="#5-аналіз-першопричин-успішних-атак-4">#</a></h2>
+<p>Погляд BT на те, чому виявлення/реагування провалилися (прогалини покриття, налаштування, процеси, кадри).</p>
+<h2 id="6-висновки-та-потенціал-покращення-5">6. Висновки та потенціал покращення <em>(§5)</em><a class="anchor" href="#6-висновки-та-потенціал-покращення-5">#</a></h2>
+<p>Пріоритизовані покращення людей / процесів / технологій.</p>
+<h2 id="7-теми-для-purple-teaming-6">7. Теми для purple teaming <em>(§6)</em><a class="anchor" href="#7-теми-для-purple-teaming-6">#</a></h2>
+<p>Конкретні пункти для повторного відтворення чи спільного дослідження у вправі purple фази завершення.</p><div class="pager"><a href="templates-finding-template.html"><div class="n">← Назад</div><div class="t">Картка знахідки + реєстр</div></a><a class="next" href="templates-tsr-template.html"><div class="n">Далі →</div><div class="t">Test Summary Report (Додаток VII)</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

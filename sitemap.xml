@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bohdan-lukin.com/</loc>
     <lastmod>2026-10-24</lastmod>
@@ -10,5 +11,561 @@
       <image:loc>https://bohdan-lukin.com/assets/profile.png</image:loc>
       <image:title>Bohdan Lukin — Red Team Lead &amp; Offensive Security Engineer</image:title>
     </image:image>
+  </url>
+<url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/README.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/README.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/README.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/README.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/README.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/README.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/README.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/README.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-DORA-Regulation-EU-2022-2554.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-DORA-Regulation-EU-2022-2554.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-DORA-Regulation-EU-2022-2554.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-SOURCES.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-SOURCES.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-SOURCES.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-SOURCES.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-SOURCES.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-SOURCES.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/assets-source-SOURCES.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/assets-source-SOURCES.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/example-ti-scoping-questionnaire-meridian-bank.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ti-scoping-questionnaire-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ti-scoping-questionnaire-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ti-scoping-questionnaire-meridian-bank.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ti-scoping-questionnaire-meridian-bank.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ti-scoping-questionnaire-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ti-scoping-questionnaire-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ti-scoping-questionnaire-meridian-bank.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/example-ttir-meridian-bank.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ttir-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ttir-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ttir-meridian-bank.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ttir-meridian-bank.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ttir-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/example-ttir-meridian-bank.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/example-ttir-meridian-bank.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/methodology-engagement-lifecycle.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-engagement-lifecycle.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-engagement-lifecycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-engagement-lifecycle.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-engagement-lifecycle.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-engagement-lifecycle.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-engagement-lifecycle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-engagement-lifecycle.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/methodology-overview.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-overview.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-overview.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-overview.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-overview.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-overview.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-overview.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-overview.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/methodology-red-team-method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-red-team-method.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-red-team-method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-red-team-method.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-red-team-method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-red-team-method.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-red-team-method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-red-team-method.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/methodology-safety-and-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-safety-and-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-safety-and-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-safety-and-risk.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-safety-and-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-safety-and-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-safety-and-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-safety-and-risk.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/methodology-threat-intelligence-method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-threat-intelligence-method.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-threat-intelligence-method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-threat-intelligence-method.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-threat-intelligence-method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-threat-intelligence-method.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/methodology-threat-intelligence-method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/methodology-threat-intelligence-method.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-00-pre-engagement-rfp.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-00-pre-engagement-rfp.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-00-pre-engagement-rfp.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-00-pre-engagement-rfp.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-00-pre-engagement-rfp.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-00-pre-engagement-rfp.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-00-pre-engagement-rfp.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-00-pre-engagement-rfp.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-01-scoping-launch.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-01-scoping-launch.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-01-scoping-launch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-01-scoping-launch.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-01-scoping-launch.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-01-scoping-launch.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-01-scoping-launch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-01-scoping-launch.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-02-threat-intelligence.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-02-threat-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-02-threat-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-02-threat-intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-02-threat-intelligence.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-02-threat-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-02-threat-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-02-threat-intelligence.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-03-red-team-planning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-03-red-team-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-03-red-team-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-03-red-team-planning.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-03-red-team-planning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-03-red-team-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-03-red-team-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-03-red-team-planning.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-04-active-testing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-04-active-testing.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-04-active-testing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-04-active-testing.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-04-active-testing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-04-active-testing.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-04-active-testing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-04-active-testing.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-05-reporting-replay-purple.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-05-reporting-replay-purple.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-05-reporting-replay-purple.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-05-reporting-replay-purple.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-05-reporting-replay-purple.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-05-reporting-replay-purple.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-05-reporting-replay-purple.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-05-reporting-replay-purple.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/phases-06-remediation-closure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-06-remediation-closure.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-06-remediation-closure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-06-remediation-closure.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-06-remediation-closure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-06-remediation-closure.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/phases-06-remediation-closure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/phases-06-remediation-closure.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-concepts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-concepts.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-concepts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-concepts.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-concepts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-concepts.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-concepts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-concepts.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-engagement-checklist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-engagement-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-engagement-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-engagement-checklist.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-engagement-checklist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-engagement-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-engagement-checklist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-engagement-checklist.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-goal-planning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-goal-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-goal-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-goal-planning.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-goal-planning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-goal-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-goal-planning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-goal-planning.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-operator-log.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-operator-log.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-operator-log.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-operator-log.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-operator-log.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-operator-log.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-operator-log.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-operator-log.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-threat-profile-emulation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-threat-profile-emulation.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-threat-profile-emulation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-threat-profile-emulation.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-threat-profile-emulation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-threat-profile-emulation.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-threat-profile-emulation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-threat-profile-emulation.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team-tradecraft-and-opsec.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-tradecraft-and-opsec.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-tradecraft-and-opsec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-tradecraft-and-opsec.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-tradecraft-and-opsec.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-tradecraft-and-opsec.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team-tradecraft-and-opsec.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team-tradecraft-and-opsec.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/red-team.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/red-team.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/red-team.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-acronyms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-acronyms.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-acronyms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-acronyms.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-acronyms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-acronyms.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-acronyms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-acronyms.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-deliverables-matrix.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-deliverables-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-deliverables-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-deliverables-matrix.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-deliverables-matrix.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-deliverables-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-deliverables-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-deliverables-matrix.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-dora-tiber-maps.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-dora-tiber-maps.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-dora-tiber-maps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-dora-tiber-maps.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-dora-tiber-maps.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-dora-tiber-maps.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-dora-tiber-maps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-dora-tiber-maps.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-framework-timeline.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-framework-timeline.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-framework-timeline.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-framework-timeline.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-framework-timeline.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-framework-timeline.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-framework-timeline.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-framework-timeline.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-glossary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-glossary.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-glossary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-glossary.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-official-sources.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-official-sources.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-official-sources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-official-sources.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-official-sources.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-official-sources.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-official-sources.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-official-sources.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/reference-roles-and-raci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-roles-and-raci.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-roles-and-raci.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-roles-and-raci.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-roles-and-raci.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-roles-and-raci.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/reference-roles-and-raci.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/reference-roles-and-raci.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-bttr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-bttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-bttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-bttr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-bttr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-bttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-bttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-bttr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-evidence-register.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-evidence-register.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-evidence-register.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-evidence-register.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-evidence-register.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-evidence-register.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-evidence-register.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-evidence-register.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-finding-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-finding-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-finding-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-finding-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-finding-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-finding-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-finding-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-finding-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-project-charter-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-project-charter-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-project-charter-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-project-charter-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-project-charter-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-project-charter-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-project-charter-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-project-charter-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttp-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttp-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttp-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttp-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttp-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttp-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttp-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttp-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rttr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rttr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-rules-of-engagement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rules-of-engagement.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rules-of-engagement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rules-of-engagement.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rules-of-engagement.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rules-of-engagement.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-rules-of-engagement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-rules-of-engagement.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-ssd-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ssd-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ssd-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ssd-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ssd-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ssd-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ssd-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ssd-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-threat-actor-scenario-matrix.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-threat-actor-scenario-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-threat-actor-scenario-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-threat-actor-scenario-matrix.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-threat-actor-scenario-matrix.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-threat-actor-scenario-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-threat-actor-scenario-matrix.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-threat-actor-scenario-matrix.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-scoping-questionnaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-scoping-questionnaire.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-scoping-questionnaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-scoping-questionnaire.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-scoping-questionnaire.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-scoping-questionnaire.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-scoping-questionnaire.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-scoping-questionnaire.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-to-rt-handover-register.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-to-rt-handover-register.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-to-rt-handover-register.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-to-rt-handover-register.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-to-rt-handover-register.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-to-rt-handover-register.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ti-to-rt-handover-register.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ti-to-rt-handover-register.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-tsr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-tsr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-tsr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-tsr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-tsr-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-tsr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-tsr-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-tsr-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/templates-ttir-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ttir-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ttir-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ttir-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ttir-template.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ttir-template.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://bohdan-lukin.com/manuals/dora-tibereu/uk/templates-ttir-template.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bohdan-lukin.com/manuals/dora-tibereu/templates-ttir-template.html"/>
+  </url>
+  <url>
+    <loc>https://bohdan-lukin.com/manuals/dora-tibereu/ti-methodology.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bohdan-lukin.com/manuals/dora-tibereu/ti-methodology.html"/>
   </url>
 </urlset>

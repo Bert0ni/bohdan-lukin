@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Реєстр доказів · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="templates-evidence-register.html"><link rel="alternate" hreflang="en" href="../templates-evidence-register.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html" class="active">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../templates-evidence-register.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Шаблони › Реєстр доказів</div><h1 id="реєстр-доказів--шаблон">Реєстр доказів — ШАБЛОН</h1>
+<blockquote><p>Власник: TIP (джерела TI) + RT (докази виконання). У реальному проєкті тримайте як <code>.xlsx</code>. Це визначає необхідні колонки. <strong>Ніколи не зберігайте реальні дані клієнта в репозиторії.</strong></p></blockquote>
+<h2 id="посилання-на-джерела-ti">Посилання на джерела TI<a class="anchor" href="#посилання-на-джерела-ti">#</a></h2>
+<table><thead><tr><th>ID джерела</th><th>Тип (OSINT/даркнет/витік/стрічка…)</th><th>Опис</th><th>URL / розташування</th><th>Дата збору</th><th>Впевненість</th><th>Де використано (сценарій/актор)</th></tr></thead><tbody><tr><td>TI-SRC-001</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2 id="методологія-оцінювання">Методологія оцінювання<a class="anchor" href="#методологія-оцінювання">#</a></h2>
+<p>Задокументуйте тут шкалу оцінювання акторів, ваги та визначення впевненості, щоб пріоритизація була відтворюваною.</p>
+<h2 id="таблиця-ioc--ttp">Таблиця IOC / TTP<a class="anchor" href="#таблиця-ioc--ttp">#</a></h2>
+<table><thead><tr><th>ID</th><th>Тип (IOC/TTP)</th><th>Значення / техніка</th><th>MITRE ATT&amp;CK ID</th><th>Контекст</th><th>Посилання на джерело</th></tr></thead><tbody><tr><td>IOC-001</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2 id="докази-виконання-активне-тестування">Докази виконання (активне тестування)<a class="anchor" href="#докази-виконання-активне-тестування">#</a></h2>
+<table><thead><tr><th>ID доказу</th><th>Позначка часу (UTC)</th><th>Сценарій</th><th>Крок атаки</th><th>TTP (ATT&amp;CK)</th><th>Опис</th><th>Розташування артефакту</th><th>Оператор</th><th>Посилання на прапор</th></tr></thead><tbody><tr><td>EV-001</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<h2 id="ланцюг-збереження">Ланцюг збереження<a class="anchor" href="#ланцюг-збереження">#</a></h2>
+<p>Для кожного ключового артефакту: хто зафіксував, коли, де зберігається, контроль доступу, план зберігання/знищення.</p><div class="pager"><a href="templates-threat-actor-scenario-matrix.html"><div class="n">← Назад</div><div class="t">Матриця акторів і сценаріїв</div></a><a class="next" href="templates-ti-to-rt-handover-register.html"><div class="n">Далі →</div><div class="t">Реєстр передачі TI→RT</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Емуляція профілю загрози · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="red-team-threat-profile-emulation.html"><link rel="alternate" hreflang="en" href="../red-team-threat-profile-emulation.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html" class="active">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../red-team-threat-profile-emulation.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Посібники Red Team › Емуляція профілю загрози</div><h1 id="емуляція-профілю-загрози">Емуляція профілю загрози</h1>
+<p>Оригінальний посібник із перетворення актора загрози з TTIR на <strong>план емуляції</strong>, який Red Team може виконати — міст між розвідкою й операціями. Він споживає профілі акторів із <a href="templates-ttir-template.html">TTIR</a> і живить <a href="templates-rttp-template.html">RTTP</a>.</p>
+<h2 id="від-актора-до-плану-емуляції">Від актора до плану емуляції<a class="anchor" href="#від-актора-до-плану-емуляції">#</a></h2>
+<div class="mermaid">flowchart LR
+  TA[&quot;Профіль актора з TTIR&quot;] --&gt; CAP[&quot;Спроможності та намір&quot;]
+  CAP --&gt; TTP[&quot;Характерні TTP, змаповані на ATT&amp;CK&quot;]
+  TTP --&gt; PLAN[&quot;План емуляції: робити / не робити&quot;]
+  PLAN --&gt; PATH[&quot;Шляхи атаки до прапорів&quot;]
+  PATH --&gt; RTTP[&quot;Сценарій RTTP&quot;]</div>
+<h2 id="що-фіксує-профіль-загрози-картка-емуляції">Що фіксує профіль загрози (картка емуляції)<a class="anchor" href="#що-фіксує-профіль-загрози-картка-емуляції">#</a></h2>
+<table><thead><tr><th>Поле</th><th>Зміст</th></tr></thead><tbody><tr><td><strong>Актор / архетип</strong></td><td>Названий актор або клас, що емулюється (і сценарій, який він визначає)</td></tr><tr><td><strong>Мотивація та намір</strong></td><td>Чому він націлений на цей суб&#x27;єкт / CIF</td></tr><tr><td><strong>Спроможність</strong></td><td>Складність, ресурси, кастомні vs загальнодоступні інструменти</td></tr><tr><td><strong>Характерні TTP</strong></td><td>Конкретні техніки ATT&amp;CK, які актор відомо/за оцінкою використовує</td></tr><tr><td><strong>Перевага початкового доступу</strong></td><td>Фішинг, експлуатація публічних сервісів, ланцюг постачання, валідні облікові записи…</td></tr><tr><td><strong>Стиль пост-експлуатації</strong></td><td>Прямо до цілі vs широка присутність; непомітність vs швидкість</td></tr><tr><td><strong>Інструменти для емуляції</strong></td><td>Репрезентативний C2 / інструменти зі схожою поведінкою (не обов&#x27;язково їхні)</td></tr><tr><td><strong>Список «робити»</strong></td><td>Поведінка в межах профілю, яку відтворюємо</td></tr><tr><td><strong>Список «не робити»</strong></td><td>Поведінка поза профілем, якої уникаємо (зберігає реалістичність тесту)</td></tr><tr><td><strong>Ознаки атрибуції</strong></td><td>Характерні індикатори, варті відтворення для перевірки виявлень</td></tr></tbody></table>
+<h2 id="ретроспективне-vs-перспективне">Ретроспективне vs перспективне<a class="anchor" href="#ретроспективне-vs-перспективне">#</a></h2>
+<p>Емулюйте <strong>поведінку на основі доказів</strong> (що актор робив), але, як дозволяє TTIR, додавайте <strong>правдоподібні перспективні</strong> TTP (що він міг би зробити далі) — чітко розмежовуючи ці два типи й зберігаючи гнучкість для будь-якого <strong>Scenario X</strong>.</p>
+<h2 id="точність-vs-здійсненність">Точність vs здійсненність<a class="anchor" href="#точність-vs-здійсненність">#</a></h2>
+<p>Прагніть <strong>найвищої точності, що є безпечною та здійсненною</strong> у відведеному вікні. Де точний інструментарій непрактичний чи небезпечний, емулюйте <em>поведінку та індикатори</em>, що навантажують ті самі рубежі захисту — мета виміряти виявлення/реагування для цього класу TTP, а не запускати реальне шкідливе ПЗ актора.</p>
+<blockquote><p>Емуляція лишається в межах правил <a href="templates-rules-of-engagement.html">RoE</a> та <a href="methodology-safety-and-risk.html">безпеки і ризиків</a>. Кожна емульована TTP мапується на прапор/CIF і фіксується в <a href="red-team-operator-log.html">oplog</a> для обговорення Replay/Purple.</p></blockquote>
+<hr>
+<p><em>Авторство концепцій: емуляція противника й профілі загроз у популяризації Joe Vest та James Tubberville — див. <a href="https://redteam.guide">RedTeam.Guide</a> та їхню книгу (додаткові джерела в <a href="red-team.html">змісті розділу</a>). Текст тут оригінальний; за їхнім викладом звертайтеся до оригіналів.</em></p><div class="pager"><a href="red-team-tradecraft-and-opsec.html"><div class="n">← Назад</div><div class="t">Техніки та OPSEC</div></a><a class="next" href="red-team-operator-log.html"><div class="n">Далі →</div><div class="t">Журнал оператора (oplog)</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

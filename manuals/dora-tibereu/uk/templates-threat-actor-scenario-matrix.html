@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Матриця акторів і сценаріїв · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="templates-threat-actor-scenario-matrix.html"><link rel="alternate" hreflang="en" href="../templates-threat-actor-scenario-matrix.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html" class="active">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../templates-threat-actor-scenario-matrix.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Шаблони › Матриця акторів і сценаріїв</div><h1 id="матриця-акторів-і-сценаріїв--шаблон">Матриця акторів і сценаріїв — ШАБЛОН</h1>
+<blockquote><p>Власник: TIP. Супутник до TTIR. У реальному проєкті тримайте це як <code>.xlsx</code>; цей <code>.md</code> визначає необхідні колонки та ілюстративний (вигаданий) рядок.</p></blockquote>
+<h2 id="пріоритизація-акторів-загроз">Пріоритизація акторів загроз<a class="anchor" href="#пріоритизація-акторів-загроз">#</a></h2>
+<table><thead><tr><th>ID актора</th><th>Актор / група</th><th>Тип</th><th>Спроможність (1–5)</th><th>Намір (1–5)</th><th>Релевантність (1–5)</th><th>Оцінка</th><th>Впевненість</th><th>Обґрунтування</th><th>Обрано?</th></tr></thead><tbody><tr><td>TA-01</td><td><em>(напр., фінансово мотивована група вторгнення)</em></td><td>Кіберзлочинність</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p>Методологія оцінювання: визначте шкалу й ваги; зафіксуйте в реєстрі доказів.</p>
+<h2 id="сценарії-загроз">Сценарії загроз<a class="anchor" href="#сценарії-загроз">#</a></h2>
+<table><thead><tr><th>Поле</th><th>Приклад — вигаданий банк</th></tr></thead><tbody><tr><td>ID сценарію</td><td>SC-01</td></tr><tr><td>Актор загрози</td><td>Фінансово мотивована група вторгнення</td></tr><tr><td>Цільова CIF</td><td>Обробка платежів</td></tr><tr><td>Мотивація</td><td>Фінансова вигода</td></tr><tr><td>Вектор проникнення</td><td>Фішинг облікових даних</td></tr><tr><td>Ключові TTP</td><td>Initial Access, Credential Access, Lateral Movement</td></tr><tr><td>Ціль</td><td>Контрольована демонстрація несанкціонованого доступу до платіжної системи</td></tr><tr><td>Прапор</td><td>FLAG-PAY-01</td></tr><tr><td>Вимір впливу</td><td>Цілісність</td></tr><tr><td>Впевненість розвідки</td><td>Середня</td></tr><tr><td>Підтверджувальні докази</td><td>TI-SRC-014, TI-SRC-021</td></tr></tbody></table>
+<blockquote><p>Лише ілюстративно — реальний сценарій потребує підтверджених джерел, обґрунтування актора й повного потоку атаки.</p></blockquote>
+<h2 id="таблиця-сценаріїв-довгий-список--вибір">Таблиця сценаріїв (довгий список + вибір)<a class="anchor" href="#таблиця-сценаріїв-довгий-список--вибір">#</a></h2>
+<table><thead><tr><th>ID сценарію</th><th>Актор загрози</th><th>Цільова CIF</th><th>Вектор проникнення</th><th>Вимір впливу (A/I/C)</th><th>Прапор</th><th>Впевненість</th><th>Обрано?</th><th>Причина відхилення</th></tr></thead><tbody><tr><td>SC-01</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<p><strong>Перевірка повноти:</strong> відібрані сценарії сукупно покривають <strong>A + I + C</strong>; загалом ≥3; ≤1 Scenario-X.</p><div class="pager"><a href="templates-ttir-template.html"><div class="n">← Назад</div><div class="t">TTIR (Додаток III)</div></a><a class="next" href="templates-evidence-register.html"><div class="n">Далі →</div><div class="t">Реєстр доказів</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

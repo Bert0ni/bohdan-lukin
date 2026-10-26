@@ -61,6 +61,12 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .topbar .spacer{flex:1}
 .toggle{background:none;border:1px solid var(--line-strong);color:var(--muted);border-radius:8px;padding:6px 10px;font-size:12.5px;cursor:pointer}
 .toggle:hover{color:var(--ink)}
+.langsw{display:inline-flex;border:1px solid var(--line-strong);border-radius:8px;overflow:hidden;font-size:12.5px}
+.langsw .lang{padding:6px 10px;color:var(--muted);text-decoration:none;border-right:1px solid var(--line)}
+.langsw .lang:last-child{border-right:0}
+.langsw .lang:hover{color:var(--ink);background:var(--chip)}
+.langsw .lang.on{background:var(--brand);color:#fff;font-weight:700}
+.langsw .lang.off{color:var(--faint);cursor:not-allowed}
 
 .content{padding:clamp(22px,4vw,46px);max-width:900px;width:100%}
 .crumbs{font-size:12.5px;color:var(--muted);margin-bottom:12px}

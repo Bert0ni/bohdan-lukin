@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Огляд методології · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="methodology-overview.html"><link rel="alternate" hreflang="en" href="../methodology-overview.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html" class="active">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../methodology-overview.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Концепції › Огляд методології</div><h1 id="методологія--огляд">Методологія — огляд</h1>
+<p>Як ми проводимо проєкт TIBER-EU. Це <em>наша</em> операційна модель, що ґрунтується на нормативному фреймворку (<a href="reference-dora-tiber-maps.html">довідник</a>), але викладена як практика.</p>
+<h2 id="три-рівні-процесу">Три рівні процесу<a class="anchor" href="#три-рівні-процесу">#</a></h2>
+<div class="mermaid">mindmap
+  root((Проєкт TIBER-EU))
+    Регуляторне врядування
+      Орган TLPT і TM
+      TCT
+      Власник тесту суб&#x27;єкт
+    Threat Intelligence
+      TIP
+      Цифровий слід
+      Актори загроз і сценарії
+    Операції Red Team
+      RT і RTTM
+      Шляхи атаки до прапорів
+      Докази і звітність</div>
+<p>Завжди розмежовуйте ці рівні — їх змішування призводить до збоїв урядування:</p>
+<ol><li><strong>Регуляторне врядування</strong> — хто ініціює, контролює та офіційно визнає TLPT (Орган/TM, TCT). Власником проєкту є <strong>фінансова установа</strong>, а не ми.</li><li><strong>Threat Intelligence</strong> — хто досліджує загрози та формує сценарії загроз (TIP).</li><li><strong>Операції Red Team</strong> — хто перетворює сценарії на плани атак, виконує їх і фіксує докази (RT/RTTM).</li></ol>
+<p>Тест TIBER — це <strong>не масштабний пентест</strong>. Це контрольована симуляція атак на критичні або важливі функції, що оцінює як факт компрометації, <strong>так і</strong> здатність захисників виявити загрозу та відреагувати на неї.</p>
+<h2 id="наша-модель-надання-послуг-єдиний-постачальник-розділені-команди">Наша модель надання послуг: єдиний постачальник, розділені команди<a class="anchor" href="#наша-модель-надання-послуг-єдиний-постачальник-розділені-команди">#</a></h2>
+<p>Клієнт погодив, що один постачальник надає і TIP, і RT, із <strong>внутрішнім розділенням</strong> двох команд. Щоб це розділення було придатним до аудиту, ми ведемо <a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a>, де фіксуємо кожен артефакт, хто його підготував, хто переглянув і його статус погодження. Це інструмент простежуваності, а <strong>не</strong> заміна офіційної процедури погодження TIBER.</p>
+<h2 id="керівні-принципи">Керівні принципи<a class="anchor" href="#керівні-принципи">#</a></h2>
+<ul><li><strong>Керовано розвідданими, а не інструментами.</strong> Сценарії походять від реальних, релевантних акторів загроз — а не від вигаданих ланцюжків експлойтів, обіцяних наперед.</li><li><strong>Обсяг і ризик належать клієнту.</strong> RTTM консультує щодо технічної здійсненності; CT/CTL володіють SSD, а орган його валідує.</li><li><strong>Безпека понад усе.</strong> Тестування виконується на проді; кожна ризикована дія має погодження, умови зупинки та деконфлікт. Див. <a href="methodology-safety-and-risk.html"><code>safety-and-risk</code></a>.</li><li><strong>Докази за замовчуванням.</strong> Докази з позначками часу, атрибуцією та ланцюгом збереження для кожного прапора і значущої TTP — фіксуються безперервно, а не реконструюються постфактум.</li><li><strong>Успіх вимірюється досягненням цілей, а не отриманням Domain Admin.</strong> Результати виявлення та реагування є частиною підсумку.</li><li><strong>Усе мапується на MITRE ATT&amp;CK</strong> для спільної мови між TTIR, RTTP і RTTR.</li></ul>
+<h2 id="модель-етапів">Модель етапів<a class="anchor" href="#модель-етапів">#</a></h2>
+<p>Див. <a href="methodology-engagement-lifecycle.html">життєвий цикл проєкту</a> щодо наративу та <a href="phases-00-pre-engagement-rfp.html">етапи</a> щодо активностей, входів, виходів і контрольних точок кожного етапу.</p><div class="pager"><span></span><a class="next" href="methodology-engagement-lifecycle.html"><div class="n">Далі →</div><div class="t">Життєвий цикл проєкту</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

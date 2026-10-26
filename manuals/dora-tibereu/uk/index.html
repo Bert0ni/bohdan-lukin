@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Головна · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="index.html"><link rel="alternate" hreflang="en" href="../index.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html" class="active">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../index.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content">
+<div class="hero"><h1>TIBER-EU / DORA — Польовий посібник: оператор і керівник</h1><p>Внутрішня база знань для проведення тестувань на проникнення за розвідданими (TLPT) за TIBER-EU / DORA у моделі єдиного постачальника (Threat Intelligence + Red Team). Користуйтеся бічною панеллю або натисніть <span class="chip">/</span> для пошуку.</p></div>
+<div class="statline">
+  <div class="stat"><b>7</b>посібники етапів</div><div class="stat"><b>13</b>шаблони</div>
+  <div class="stat"><b>2</b>регламенти офлайн</div><div class="stat"><b>86</b>сторінки пошуку</div>
+</div>
+<h2 id="browse">Огляд</h2>
+<div class="cards"><a class="card" href="methodology-overview.html"><div class="ic">🧭</div><b>Концепції</b><span>Модель фреймворку, життєвий цикл, методи TI та RT, безпека.</span></a><a class="card" href="red-team.html"><div class="ic">🎯</div><b>Посібники Red Team</b><span>Концепції, планування, техніки, oplog, чек-листи.</span></a><a class="card" href="reference-dora-tiber-maps.html"><div class="ic">🧩</div><b>Схеми DORA і TIBER</b><span>Ментальні карти й таблиці по регламенту та фреймворку.</span></a><a class="card" href="phases-00-pre-engagement-rfp.html"><div class="ic">🗺️</div><b>Етапи</b><span>Покроковий плейбук, етапи 0 → 6, з контрольними точками.</span></a><a class="card" href="templates-ssd-template.html"><div class="ic">📄</div><b>Шаблони</b><span>13 готових артефактів, кожен прив'язаний до Додатка RTS.</span></a><a class="card" href="reference-framework-timeline.html"><div class="ic">📘</div><b>Довідник</b><span>Таймлайн, ролі та RACI, артефакти, джерела.</span></a><a class="card" href="reference-glossary.html"><div class="ic">🔤</div><b>Визначення</b><span>Глосарій та абревіатури.</span></a><a class="card" href="example-ttir-meridian-bank.html"><div class="ic">🧪</div><b>Приклади</b><span>Вигаданий банк Meridian: TTIR та опитувальник.</span></a><a class="card" href="assets-source-DORA-Regulation-EU-2022-2554.html"><div class="ic">⚖️</div><b>Регламенти</b><span>DORA і TLPT RTS, повний текст офлайн.</span></a></div>
+<h2 id="paths">Швидкі маршрути</h2>
+<h3>👤 Для оператора (TIP / RT)</h3><ul><li><a href="methodology-threat-intelligence-method.html">Методологія TI</a> — збір, пасивна vs активна розвідка, оцінка акторів, сценарії.</li><li><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a> → <a href="templates-ttir-template.html">TTIR</a> → <a href="templates-rttp-template.html">RTTP</a> → <a href="templates-finding-template.html">знахідки</a> → <a href="templates-rttr-template.html">RTTR</a>.</li><li><a href="methodology-safety-and-risk.html">Безпека та ризики</a> — умови зупинки, leg-up, деконфлікт.</li><li><a href="example-ttir-meridian-bank.html">Приклад TTIR</a> (вигаданий банк Meridian).</li></ul>
+<h3>🧭 Для керівника (RTTM / керівник проєкту)</h3><ul><li><a href="reference-roles-and-raci.html">Ролі та RACI</a> і <a href="reference-framework-timeline.html">таймлайн фреймворку</a> (2025 / узгоджено з DORA).</li><li><a href="reference-deliverables-matrix.html">Матриця артефактів</a> — кожен артефакт, власник, Додаток.</li><li><a href="phases-00-pre-engagement-rfp.html">Етапи</a> з контрольними точками.</li><li><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS</a> — обов'язковий технічний стандарт та його Додатки.</li></ul>
+</div>
+  </div>
+</div>
+
+</body></html>

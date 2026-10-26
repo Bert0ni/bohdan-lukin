@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Концепції (Red Team / Pentest / Vuln) · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="red-team-concepts.html"><link rel="alternate" hreflang="en" href="../red-team-concepts.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html" class="active">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../red-team-concepts.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Посібники Red Team › Концепції (Red Team / Pentest / Vuln)</div><h1 id="концепції-red-team">Концепції Red Team</h1>
+<p>Оригінальний огляд red teaming і його місця серед типів тестування безпеки, узгоджений з операційною моделлю TIBER-EU / DORA. Щодо детального зовнішнього викладу див. <a href="red-team.html#додаткові-джерела-зовнішні--тут-не-відтворюються">додаткові джерела</a>.</p>
+<h2 id="що-таке-red-teaming">Що таке red teaming<a class="anchor" href="#що-таке-red-teaming">#</a></h2>
+<p>Red teaming — це <strong>емуляція противника, керована цілями</strong>: довірена команда відтворює тактики, техніки та процедури (TTP) реалістичної загрози, щоб перевірити, чи може організація їй <strong>запобігти, виявити й відреагувати</strong> — наскрізно, на рівні <strong>людей, процесів і технологій</strong>. Успіх — це не «чи отримали ми Domain Admin»; це <strong>що захист побачив і зробив</strong> проти погоджених цілей. У TIBER-EU це формалізується як прапори, прив&#x27;язані до критичних або важливих функцій (CIF).</p>
+<h2 id="життєвий-цикл-проєкту-загальний">Життєвий цикл проєкту (загальний)<a class="anchor" href="#життєвий-цикл-проєкту-загальний">#</a></h2>
+<div class="mermaid">flowchart LR
+  A[&quot;Планування&quot;] --&gt; B[&quot;Розвідка&quot;]
+  B --&gt; C[&quot;Проникнення: початковий доступ&quot;]
+  C --&gt; D[&quot;Закріплення: персистентність і рух&quot;]
+  D --&gt; E[&quot;Дії за цілями: досягнення прапорів&quot;]
+  E --&gt; F[&quot;Звітність&quot;]
+  F --&gt; G[&quot;Висновки: purple і усунення&quot;]</div>
+<p>У проєкті TIBER-EU ця загальна дуга урядується CT/TM і лягає на формальні етапи — див. <a href="methodology-engagement-lifecycle.html">життєвий цикл TIBER-EU</a> та <a href="phases-00-pre-engagement-rfp.html">посібники етапів</a>.</p>
+<h2 id="red-teaming-vs-пентест-vs-оцінка-вразливостей">Red teaming vs пентест vs оцінка вразливостей<a class="anchor" href="#red-teaming-vs-пентест-vs-оцінка-вразливостей">#</a></h2>
+<p>Кожен керує різним видом ризику; вони взаємодоповнюючі, а не взаємозамінні.</p>
+<table><thead><tr><th>Аспект</th><th>Оцінка вразливостей</th><th>Пентест</th><th>Проєкт Red Team</th></tr></thead><tbody><tr><td><strong>Головна мета</strong></td><td>Перелік відомих слабкостей</td><td>Довести експлуатовність конкретних вад</td><td>Виміряти виявлення та реагування проти реалістичного противника</td></tr><tr><td><strong>Обсяг</strong></td><td>Широкий, поверхневий</td><td>Визначені цілі/системи</td><td>Керований цілями, уся поверхня атаки організації</td></tr><tr><td><strong>Фокус</strong></td><td>Технології</td><td>Технології (частково процеси)</td><td>Люди + процеси + технології</td></tr><tr><td><strong>Знання</strong></td><td>Зазвичай з обліковими даними/відоме</td><td>«Сіре»/відоме</td><td>Керовано розвідданими, мало попередніх знань</td></tr><tr><td><strong>Обізнаність захисту</strong></td><td>Обізнаний</td><td>Часто обізнаний</td><td><strong>Не обізнаний</strong> (blue team не попереджають)</td></tr><tr><td><strong>Модель загрози</strong></td><td>Відомі CVE/помилки конфігурації</td><td>Досяжна поверхня атаки</td><td><strong>Емуляція противника</strong> (TTP конкретного актора)</td></tr><tr><td><strong>Типова тривалість</strong></td><td>Години–дні</td><td>~1–2 тижні</td><td>Тижні–місяці (активна фаза TIBER <strong>≥12 тижнів</strong>)</td></tr><tr><td><strong>Міра цінності</strong></td><td>Зменшене покриття / експозиція</td><td>Продемонстрований вплив експлойту</td><td>Стійкість: запобігання / виявлення / реагування</td></tr></tbody></table>
+<blockquote><p>У TIBER-EU це порівняння важливе для розмов про обсяг: TLPT — це <strong>проєкт Red Team</strong>, а не пентест. Уникайте обіцянок конкретних компрометацій наперед — сценарії виводяться з розвідданих пізніше в <a href="templates-ttir-template.html">TTIR</a>.</p></blockquote>
+<h2 id="кольори-команд-і-відповідність-tiber">Кольори команд і відповідність TIBER<a class="anchor" href="#кольори-команд-і-відповідність-tiber">#</a></h2>
+<div class="mermaid">mindmap
+  root((Команди))
+    Red
+      Емуляція противника
+      TTP і цілі
+      Роль TIBER RT і RTTM
+    Blue
+      Виявлення і реагування
+      SOC і IR
+      Не поінформовані під час тесту
+    Control Team
+      Урядує і деконфліктує
+      Ризик і погодження
+      Роль TIBER CT CTL і Test Manager
+    Purple
+      Співпраця Red і Blue
+      Обов&#x27;язкова на завершенні TIBER</div>
+<ul><li><strong>Red</strong> — наступальна команда (наші <strong>RT / RTTM</strong>).</li><li><strong>Blue</strong> — захисники (SOC/IR); у тесті TIBER їм <strong>не повідомляють</strong>, що він відбувається.</li><li><strong>White → Control Team</strong> — урядує, погоджує ризик і деконфліктує; у TIBER це <strong>CT/CTL</strong> разом із <strong>Test Manager</strong> з боку органу. (У 2025 TIBER перейменував White Team → Control Team.)</li><li><strong>Purple</strong> — структурована співпраця red+blue; <strong>обов&#x27;язкова</strong> на фазі завершення TIBER.</li></ul>
+<h2 id="керовано-загрозами-vs-на-основі-сценаріїв">Керовано загрозами vs на основі сценаріїв<a class="anchor" href="#керовано-загрозами-vs-на-основі-сценаріїв">#</a></h2>
+<ul><li><strong>Керовано загрозами</strong> — сценарії виводяться з розвідданих про акторів, що реалістично націлені на суб&#x27;єкт (стандарт TIBER; ≥3 сценарії, що покривають доступність/цілісність/конфіденційність).</li><li><strong>Scenario X</strong> — щонайбільше один перспективний, не керований розвідданими сценарій (новітні TTP).</li></ul>
+<p>Див. <a href="red-team-goal-planning.html">планування цілей</a> щодо перетворення цілей на прапори та <a href="red-team-threat-profile-emulation.html">емуляцію профілю загрози</a> щодо перетворення актора на план емуляції.</p>
+<hr>
+<p><em>Авторство концепцій: концепції red teaming і розмежування red/pen/vuln у популяризації Joe Vest та James Tubberville — див. <a href="https://redteam.guide">RedTeam.Guide</a> та їхню книгу (додаткові джерела в <a href="red-team.html">змісті розділу</a>). Текст, таблиці та діаграми тут оригінальні й узгоджені з TIBER.</em></p><div class="pager"><a href="red-team.html"><div class="n">← Назад</div><div class="t">Посібники Red Team — зміст</div></a><a class="next" href="red-team-goal-planning.html"><div class="n">Далі →</div><div class="t">Планування цілей</div></a></div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Team Test Report (Додаток V) · Польовий посібник TIBER-EU</title>
+<link rel="alternate" hreflang="uk" href="templates-rttr-template.html"><link rel="alternate" hreflang="en" href="../templates-rttr-template.html">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../search-index.js"></script>
+<script src="../assets/site.js"></script>
+</head>
+<body data-base="../" data-lang="uk">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>TIBER-EU · DORA</b><span>Польовий посібник: оператор і керівник</span></a><nav class="nav"><a href="index.html">🏠 Головна</a><div class="cat">Концепції</div><a href="methodology-overview.html">Огляд методології</a><a href="methodology-engagement-lifecycle.html">Життєвий цикл проєкту</a><a href="methodology-threat-intelligence-method.html">Методологія Threat Intelligence (TIP)</a><a href="methodology-red-team-method.html">Методологія Red Team (RT)</a><a href="methodology-safety-and-risk.html">Безпека та управління ризиками</a><div class="cat">Посібники Red Team</div><a href="red-team.html">Посібники Red Team — зміст</a><a href="red-team-concepts.html">Концепції (Red Team / Pentest / Vuln)</a><a href="red-team-goal-planning.html">Планування цілей</a><a href="red-team-tradecraft-and-opsec.html">Техніки та OPSEC</a><a href="red-team-threat-profile-emulation.html">Емуляція профілю загрози</a><a href="red-team-operator-log.html">Журнал оператора (oplog)</a><a href="red-team-engagement-checklist.html">Чек-лист проєкту</a><div class="cat">Етапи</div><a href="phases-00-pre-engagement-rfp.html">Етап 0 · Підготовка / RFP</a><a href="phases-01-scoping-launch.html">Етап 1 · Визначення обсягу та запуск</a><a href="phases-02-threat-intelligence.html">Етап 2 · Threat Intelligence</a><a href="phases-03-red-team-planning.html">Етап 3 · Планування Red Team</a><a href="phases-04-active-testing.html">Етап 4 · Активне тестування</a><a href="phases-05-reporting-replay-purple.html">Етап 5 · Звітність, Replay і Purple</a><a href="phases-06-remediation-closure.html">Етап 6 · Усунення та завершення</a><div class="cat">Шаблони</div><a href="templates-project-charter-template.html">Статут проєкту (Додаток I)</a><a href="templates-ssd-template.html">Scope Specification Document (Додаток II)</a><a href="templates-ti-scoping-questionnaire.html">Опитувальник TI</a><a href="templates-ttir-template.html">TTIR (Додаток III)</a><a href="templates-threat-actor-scenario-matrix.html">Матриця акторів і сценаріїв</a><a href="templates-evidence-register.html">Реєстр доказів</a><a href="templates-ti-to-rt-handover-register.html">Реєстр передачі TI→RT</a><a href="templates-rttp-template.html">Red Team Test Plan (Додаток IV)</a><a href="templates-rules-of-engagement.html">Правила проведення (RoE)</a><a href="templates-rttr-template.html" class="active">Red Team Test Report (Додаток V)</a><a href="templates-finding-template.html">Картка знахідки + реєстр</a><a href="templates-bttr-template.html">Blue Team Test Report (Додаток VI)</a><a href="templates-tsr-template.html">Test Summary Report (Додаток VII)</a><div class="cat">Довідник</div><a href="reference-dora-tiber-maps.html">DORA і TIBER-EU — схеми й таблиці</a><a href="reference-framework-timeline.html">Таймлайн фреймворку (2025)</a><a href="reference-roles-and-raci.html">Ролі та RACI</a><a href="reference-deliverables-matrix.html">Матриця артефактів</a><a href="reference-official-sources.html">Офіційні джерела</a><div class="cat">Визначення</div><a href="reference-glossary.html">Глосарій</a><a href="reference-acronyms.html">Абревіатури</a><div class="cat">Приклади</div><a href="methodology-threat-intelligence-method.html">Методологія TI</a><a href="example-ttir-meridian-bank.html">Приклад TTIR — Meridian</a><a href="example-ti-scoping-questionnaire-meridian-bank.html">Опитувальник TI (приклад)</a><div class="cat">Регламенти</div><a href="assets-source-DORA-Regulation-EU-2022-2554.html">DORA — Регламент (ЄС) 2022/2554</a><a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">DORA TLPT RTS — Регламент (ЄС) 2025/1190</a><div class="cat">Про проєкт</div><a href="README.html">Огляд репозиторію</a><a href="assets-source-SOURCES.html">Перелік джерел</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Пошук у посібнику…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <div class="langsw"><a class="lang" href="../templates-rttr-template.html">EN</a><span class="lang on">UA</span></div>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Головна</a> › Шаблони › Red Team Test Report (Додаток V)</div><h1 id="red-team-test-report-rttr--шаблон">Red Team Test Report (RTTR) — ШАБЛОН</h1>
+<blockquote><p>Основа: <strong>ECB TIBER-EU Red Team Test Report Guidance, січень 2025</strong> (<a href="../assets/source/ecb-rttr-guidance-2025.pdf">PDF</a>), §2 «Required content» + §3 міркування, віддзеркалюючи обов&#x27;язковий <strong>DORA TLPT RTS, Annex V</strong> (Reg. (EU) 2025/1190, <a href="assets-source-Delegated-Regulation-EU-2025-1190-DORA-TLPT-RTS.html">full text</a>). Власник: RT / RTTM. Надається CT <strong>протягом 4 тижнів</strong> після завершення активного тестування (TIBER-EU 2025). Живить TSR і План усунення. Копіюйте на проєкт; не редагуйте порожній.</p></blockquote>
+<hr>
+<h2 id="частина-a--каркас-відповідності-ecb-2-rttr-має-включати-щонайменше-все-це">Частина A — каркас відповідності ECB §2 (RTTR <em>має</em> включати щонайменше ВСЕ це)<a class="anchor" href="#частина-a--каркас-відповідності-ecb-2-rttr-має-включати-щонайменше-все-це">#</a></h2>
+<ul><li class="task"><input type="checkbox" disabled > <strong>A1 — Інформація про проведену атаку</strong>, включно з: цільові <strong>CIF</strong> і ІКТ системи/процеси/технології, що їх підтримують (як визначено в RTTP) · <strong>резюме кожного сценарію</strong> · <strong>досягнуті й недосягнуті прапори</strong> · <strong>шляхи атаки</strong>, пройдені успішно й неуспішно · <strong>TTP</strong>, використані успішно й неуспішно · <strong>відхилення від RTTP</strong> (за наявності) · <strong>надані leg-up</strong> (за наявності).</li><li class="task"><input type="checkbox" disabled > <strong>A2 — Усі дії, про які відомо тестувальникам, що їх виконав BT</strong> для реконструкції атаки й пом&#x27;якшення її наслідків.</li><li class="task"><input type="checkbox" disabled > <strong>A3 — Виявлені вразливості та інші знахідки</strong>, включно з: опис і <strong>критичність</strong> · <strong>аналіз першопричин</strong> успішних атак · <strong>рекомендації з усунення</strong>, кожна із зазначенням <strong>пріоритету усунення</strong>.</li></ul>
+<blockquote><p>§3 міркування: напишіть <strong>резюме для керівництва</strong> простими словами для топменеджменту/Ради; на сценарій — <strong>наратив</strong> (наскрізний, in/through/out де доречно, змапований на MITRE ATT&amp;CK, прапори/цілі проти тріади CIA, відхилення, leg-up); потім <strong>знахідки</strong>, <strong>попередній аналіз першопричин</strong>, <strong>рекомендації</strong>, <strong>артефакти</strong> та нотатка про поводження з <strong>конфіденційністю</strong>.</p></blockquote>
+<hr>
+<h2 id="частина-b--структура-оформлення">Частина B — структура оформлення<a class="anchor" href="#частина-b--структура-оформлення">#</a></h2>
+<h2 id="1-контроль-документа">1. Контроль документа<a class="anchor" href="#1-контроль-документа">#</a></h2>
+<p>Версія · класифікація · автор (RTTM) · рецензенти · розповсюдження · історія змін.</p>
+<h2 id="2-executive-summary">2. Executive summary<a class="anchor" href="#2-executive-summary">#</a></h2>
+<p>Підсумок за цілями/прапорами · ключові ризики · головні спостереження щодо виявлення/реагування · пріоритетні рекомендації.</p>
+<h2 id="3-обсяг-і-методологія">3. Обсяг і методологія<a class="anchor" href="#3-обсяг-і-методологія">#</a></h2>
+<p>CIF, прапори, сценарії, підхід; посилання на SSD, TTIR, RTTP.</p>
+<h2 id="4-виконані-сценарії">4. Виконані сценарії<a class="anchor" href="#4-виконані-сценарії">#</a></h2>
+<p>На сценарій: наратив, пройдений шлях атаки, результат (прапор досягнуто / ні), хронологія.</p>
+<h2 id="5-використані-ttp">5. Використані TTP<a class="anchor" href="#5-використані-ttp">#</a></h2>
+<p>Змаповані на MITRE ATT&amp;CK; успішні vs неуспішні; що було виявлено.</p>
+<h2 id="6-прапори">6. Прапори<a class="anchor" href="#6-прапори">#</a></h2>
+<p>Статус кожного прапора (досягнуто / частково / ні) з посиланнями на докази.</p>
+<h2 id="7-відхилення-та-leg-up">7. Відхилення та leg-up<a class="anchor" href="#7-відхилення-та-leg-up">#</a></h2>
+<p>Усі погоджені відхилення й leg-up: що, чому, коли, хто погодив.</p>
+<h2 id="8-докази">8. Докази<a class="anchor" href="#8-докази">#</a></h2>
+<p>Ключові докази з позначками часу й посиланнями на реєстр доказів.</p>
+<h2 id="9-вразливості-та-першопричини">9. Вразливості та першопричини<a class="anchor" href="#9-вразливості-та-першопричини">#</a></h2>
+<p>Знахідки, серйозність, аналіз першопричин (а не лише симптоми). Складіть одну картку на знахідку за <a href="templates-finding-template.html">шаблоном знахідки</a> і зведіть їх у реєстр знахідок тут.</p>
+<h2 id="10-спостереження-щодо-виявлення-та-реагування">10. Спостереження щодо виявлення та реагування<a class="anchor" href="#10-спостереження-щодо-виявлення-та-реагування">#</a></h2>
+<p>Що захист побачив/пропустив (вхід до Replay/Purple і порівняння з BTTR).</p>
+<h2 id="11-рекомендації">11. Рекомендації<a class="anchor" href="#11-рекомендації">#</a></h2>
+<p>Орієнтовані на першопричину, пріоритизовані; вхід до Плану усунення суб&#x27;єкта; дорожня карта стійкості.</p>
+<h2 id="12-додатки">12. Додатки<a class="anchor" href="#12-додатки">#</a></h2>
+<p>Детальні докази, таблиці IOC/TTP, нотатки про інструменти/інфраструктуру, підтвердження прибирання.</p><div class="pager"><a href="templates-rules-of-engagement.html"><div class="n">← Назад</div><div class="t">Правила проведення (RoE)</div></a><a class="next" href="templates-finding-template.html"><div class="n">Далі →</div><div class="t">Картка знахідки + реєстр</div></a></div></div>
+  </div>
+</div>
+
+</body></html>

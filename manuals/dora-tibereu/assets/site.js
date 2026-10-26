@@ -48,9 +48,11 @@
       var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
       shown = [];
       if (!terms.length) { box.classList.remove('open'); box.innerHTML = ''; return; }
-      var scored = [];
+      var scored = [], pageLang = document.body.getAttribute('data-lang') || 'en';
       for (var i = 0; i < idx.length; i++) {
-        var it = idx[i], hay = (it.title + ' ' + it.category + ' ' + it.text).toLowerCase(), sc = 0, ok = true;
+        var it = idx[i];
+        if (it.lang && it.lang !== pageLang) continue;   // show only current-language results
+        var hay = (it.title + ' ' + it.category + ' ' + it.text).toLowerCase(), sc = 0, ok = true;
         for (var t = 0; t < terms.length; t++) {
           if (hay.indexOf(terms[t]) < 0) { ok = false; break; }
           if (it.title.toLowerCase().indexOf(terms[t]) >= 0) sc += 5;
