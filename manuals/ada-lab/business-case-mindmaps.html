@@ -42,28 +42,18 @@
   G --&gt; H[&quot;Add MASA then DASA then Cloud Config&quot;]
   H --&gt; I[&quot;Scale + annual revalidation + surveillance&quot;]</div>
 <h2 id="2-profiles-and-the-standards-beneath-them">2. Profiles and the standards beneath them<a class="anchor" href="#2-profiles-and-the-standards-beneath-them">#</a></h2>
-<div class="mermaid">mindmap
-  root((&quot;ADA Authorized Lab&quot;))
-    CASA
-      &quot;OWASP ASVS&quot;
-      &quot;AL1 verify evidence&quot;
-      &quot;AL2 comprehensive&quot;
-      &quot;Google restricted OAuth scopes&quot;
-    MASA
-      &quot;OWASP MASVS / MASTG&quot;
-      &quot;Google Play badge&quot;
-      &quot;reuse mobile capability&quot;
-    DASA
-      &quot;developer attested&quot;
-      &quot;volume play&quot;
-    &quot;Cloud Config&quot;
-      &quot;CIS benchmarks&quot;
-      &quot;bundles with CASA AL2&quot;
-    &quot;AI Agents and Tools&quot;
-      &quot;emerging profile&quot;
-      &quot;prompt injection&quot;
-      &quot;tool abuse&quot;
-      &quot;premium pricing&quot;</div>
+<div class="mermaid">flowchart TD
+  R[&quot;ADA Authorized Lab&quot;]
+  R --&gt; CASA[&quot;CASA&quot;]
+  CASA --&gt; CA1[&quot;OWASP ASVS&quot;] &amp; CA2[&quot;AL1 verify evidence&quot;] &amp; CA3[&quot;AL2 comprehensive&quot;] &amp; CA4[&quot;Google restricted OAuth scopes&quot;]
+  R --&gt; MASA[&quot;MASA&quot;]
+  MASA --&gt; MA1[&quot;OWASP MASVS / MASTG&quot;] &amp; MA2[&quot;Google Play badge&quot;] &amp; MA3[&quot;reuse mobile capability&quot;]
+  R --&gt; DASA[&quot;DASA&quot;]
+  DASA --&gt; DA1[&quot;developer attested&quot;] &amp; DA2[&quot;volume play&quot;]
+  R --&gt; CC[&quot;Cloud Config&quot;]
+  CC --&gt; CC1[&quot;CIS benchmarks&quot;] &amp; CC2[&quot;bundles with CASA AL2&quot;]
+  R --&gt; AI[&quot;AI Agents and Tools&quot;]
+  AI --&gt; AI1[&quot;emerging profile&quot;] &amp; AI2[&quot;prompt injection&quot;] &amp; AI3[&quot;tool abuse&quot;] &amp; AI4[&quot;premium pricing&quot;]</div>
 <h2 id="3-the-revenue-flywheel-why-it-compounds">3. The revenue flywheel (why it compounds)<a class="anchor" href="#3-the-revenue-flywheel-why-it-compounds">#</a></h2>
 <div class="mermaid">flowchart LR
   A[&quot;New assessment&quot;] --&gt; B[&quot;Letter of Validation&quot;]
@@ -77,25 +67,16 @@
   I --&gt; J[&quot;More capacity per assessor&quot;]
   J --&gt; F</div>
 <h2 id="4-cross-ecosystem-demand-map">4. Cross-ecosystem demand map<a class="anchor" href="#4-cross-ecosystem-demand-map">#</a></h2>
-<div class="mermaid">mindmap
-  root((&quot;App security assessment demand&quot;))
-    &quot;Google (CORE)&quot;
-      &quot;CASA for OAuth restricted scopes&quot;
-      &quot;MASA for Play badge&quot;
-      &quot;developer pays the lab&quot;
-      &quot;annual revalidation&quot;
-    &quot;Microsoft (adjacency)&quot;
-      &quot;M365 App Compliance&quot;
-      &quot;SOC2 / ISO / PCI based&quot;
-      &quot;often Microsoft funded&quot;
-      &quot;VERIFY lab eligibility&quot;
-    &quot;Meta (adjacency)&quot;
-      &quot;Data Protection Assessment&quot;
-      &quot;Graph API data access&quot;
-      &quot;VERIFY lab eligibility&quot;
-    &quot;AI wave (tailwind)&quot;
-      &quot;agents request mailbox and drive scopes&quot;
-      &quot;fast growing obligated cohort&quot;</div>
+<div class="mermaid">flowchart TD
+  R[&quot;App security assessment demand&quot;]
+  R --&gt; G[&quot;Google — CORE&quot;]
+  G --&gt; G1[&quot;CASA for OAuth restricted scopes&quot;] &amp; G2[&quot;MASA for Play badge&quot;] &amp; G3[&quot;developer pays the lab&quot;] &amp; G4[&quot;annual revalidation&quot;]
+  R --&gt; MS[&quot;Microsoft — adjacency&quot;]
+  MS --&gt; MS1[&quot;M365 App Compliance&quot;] &amp; MS2[&quot;SOC2 / ISO / PCI based&quot;] &amp; MS3[&quot;often Microsoft funded&quot;] &amp; MS4[&quot;VERIFY lab eligibility&quot;]
+  R --&gt; MT[&quot;Meta — adjacency&quot;]
+  MT --&gt; MT1[&quot;Data Protection Assessment&quot;] &amp; MT2[&quot;Graph API data access&quot;] &amp; MT3[&quot;VERIFY lab eligibility&quot;]
+  R --&gt; AIW[&quot;AI wave — tailwind&quot;]
+  AIW --&gt; AIW1[&quot;agents request mailbox and drive scopes&quot;] &amp; AIW2[&quot;fast growing obligated cohort&quot;]</div>
 <h2 id="5-the-investment-logic-moat--annuity--exit">5. The investment logic (moat → annuity → exit)<a class="anchor" href="#5-the-investment-logic-moat--annuity--exit">#</a></h2>
 <div class="mermaid">flowchart TD
   A[&quot;ISO 17025 + TrustCB barrier&quot;] --&gt; B[&quot;Only ~10 labs worldwide&quot;]
