@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mindmaps &amp; Diagrams · ADA Authorized Lab</title>
+<meta name="description" content="Mermaid diagrams. They render in the generated site or any Mermaid viewer. Labels are quoted to avoid parser issues with special characters.">
+<link rel="canonical" href="https://bohdan-lukin.com/manuals/ada-lab/business-case-mindmaps.html"><meta property="og:type" content="article"><meta property="og:title" content="Mindmaps &amp; Diagrams · ADA Authorized Lab"><meta property="og:description" content="Mermaid diagrams. They render in the generated site or any Mermaid viewer. Labels are quoted to avoid parser issues with special characters.">
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="" data-lang="en">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>ADA Lab</b><span>ADA Authorized Lab</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Overview</div><a href="readme.html">ADA Authorized Lab — Operational &amp; Business Plan</a><a href="operational-plan.html">Master Operational Plan — Becoming an ADA Authorized Lab</a><div class="cat">Business case</div><a href="business-case-00-executive-business-case.html">Executive Business Case — ADA Authorized Lab</a><a href="business-case-competitor-pricing.html">Competitor &amp; Market Pricing (researched)</a><a href="business-case-market-sizing.html">Market Sizing — TAM / SAM / SOM</a><a href="business-case-financial-model.html">Financial Model — 5-Year Projections, Costs, Profitability &amp; ROI</a><a href="business-case-mindmaps.html" class="active">Mindmaps &amp; Diagrams</a><div class="cat">Strategy</div><a href="strategy-investment-thesis.html">Investment Thesis — ADA Authorized Lab</a><a href="strategy-market-opportunity.html">Market Opportunity</a><a href="strategy-competitive-landscape.html">Competitive Landscape</a><a href="strategy-revenue-model.html">Revenue Model &amp; Unit Economics</a><a href="strategy-partnership-strategy.html">Partnership &amp; Channel Strategy</a><div class="cat">ADA &amp; profiles</div><a href="ada-authorization-overview.html">ADA Authorization — the scheme, profiles and official steps</a><a href="ada-authorization-casa-profile.html">CASA — Cloud Application Security Assessment</a><a href="ada-authorization-masa-profile.html">MASA — Mobile Application Security Assessment</a><a href="ada-authorization-dasa-profile.html">DASA — Developer-Attested Security Assessment</a><a href="ada-authorization-cloud-config-profile.html">Cloud Config — Cloud Configuration (review) profile</a><a href="ada-authorization-ai-agents-profile.html">AI Agents &amp; Tools (emerging profile)</a><div class="cat">Accreditation</div><a href="accreditation-iso17025-roadmap.html">ISO/IEC 17025 Accreditation Roadmap</a><div class="cat">Delivery</div><a href="delivery-casa-methodology.html">CASA Delivery Methodology (working draft)</a><a href="delivery-toolchain-and-automation.html">Toolchain &amp; Automation</a><div class="cat">Program plan</div><a href="program-plan-phases-and-timeline.html">Phases &amp; Timeline (with gates)</a><a href="program-plan-budget-and-financials.html">Budget &amp; Financials</a><a href="program-plan-org-and-roles.html">Organization, Roles &amp; Independence</a><a href="program-plan-risk-register.html">Risk Register</a><div class="cat">Reference</div><a href="reference-ada-programs-overview.html">ADA Programs — Overview &amp; Mandate Map (internal reference)</a><a href="reference-profiles-matrix.html">Profiles at a glance</a><a href="reference-glossary.html">Glossary</a><a href="reference-official-sources.html">Official Sources &amp; What to Verify</a><div class="cat">Templates</div><a href="templates-authorization-tracker.html">Authorization Tracker (live checklist)</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <span class="badge-internal">INTERNAL · unlisted</span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Business case › Mindmaps &amp; Diagrams</div><h1 id="mindmaps--diagrams">Mindmaps &amp; Diagrams</h1>
+<p><em>Mermaid diagrams. They render in the generated site or any Mermaid viewer. Labels are quoted to avoid parser issues with special characters.</em></p>
+<h2 id="1-the-authorization-journey-two-parallel-tracks">1. The authorization journey (two parallel tracks)<a class="anchor" href="#1-the-authorization-journey-two-parallel-tracks">#</a></h2>
+<div class="mermaid">flowchart TD
+  A[&quot;Decide &amp; fund&quot;] --&gt; B[&quot;Petition TrustCB&quot;]
+  B --&gt; C1[&quot;Track A: ISO/IEC 17025 build&quot;]
+  B --&gt; C2[&quot;Track B: Build CASA delivery&quot;]
+  C1 --&gt; D1[&quot;QMS + method validation&quot;]
+  D1 --&gt; E1[&quot;Accreditation body audit&quot;]
+  C2 --&gt; D2[&quot;Evidence/automation pipeline&quot;]
+  D2 --&gt; E2[&quot;Trial evaluation under TrustCB&quot;]
+  E1 --&gt; F[&quot;Authorization certificate issued&quot;]
+  E2 --&gt; F
+  F --&gt; G[&quot;Listed by ADA · first paid engagements&quot;]
+  G --&gt; H[&quot;Add MASA then DASA then Cloud Config&quot;]
+  H --&gt; I[&quot;Scale + annual revalidation + surveillance&quot;]</div>
+<h2 id="2-profiles-and-the-standards-beneath-them">2. Profiles and the standards beneath them<a class="anchor" href="#2-profiles-and-the-standards-beneath-them">#</a></h2>
+<div class="mermaid">mindmap
+  root((&quot;ADA Authorized Lab&quot;))
+    CASA
+      &quot;OWASP ASVS&quot;
+      &quot;AL1 verify evidence&quot;
+      &quot;AL2 comprehensive&quot;
+      &quot;Google restricted OAuth scopes&quot;
+    MASA
+      &quot;OWASP MASVS / MASTG&quot;
+      &quot;Google Play badge&quot;
+      &quot;reuse mobile capability&quot;
+    DASA
+      &quot;developer attested&quot;
+      &quot;volume play&quot;
+    &quot;Cloud Config&quot;
+      &quot;CIS benchmarks&quot;
+      &quot;bundles with CASA AL2&quot;
+    &quot;AI Agents and Tools&quot;
+      &quot;emerging profile&quot;
+      &quot;prompt injection&quot;
+      &quot;tool abuse&quot;
+      &quot;premium pricing&quot;</div>
+<h2 id="3-the-revenue-flywheel-why-it-compounds">3. The revenue flywheel (why it compounds)<a class="anchor" href="#3-the-revenue-flywheel-why-it-compounds">#</a></h2>
+<div class="mermaid">flowchart LR
+  A[&quot;New assessment&quot;] --&gt; B[&quot;Letter of Validation&quot;]
+  B --&gt; C[&quot;Client compliant for 12 months&quot;]
+  C --&gt; D[&quot;Annual revalidation due&quot;]
+  D --&gt; E[&quot;Renewal (low effort, high margin)&quot;]
+  E --&gt; F[&quot;Growing active base&quot;]
+  F --&gt; G[&quot;More renewals stack on new logos&quot;]
+  G --&gt; A
+  H[&quot;Automation&quot;] --&gt; I[&quot;Lower cost per assessment&quot;]
+  I --&gt; J[&quot;More capacity per assessor&quot;]
+  J --&gt; F</div>
+<h2 id="4-cross-ecosystem-demand-map">4. Cross-ecosystem demand map<a class="anchor" href="#4-cross-ecosystem-demand-map">#</a></h2>
+<div class="mermaid">mindmap
+  root((&quot;App security assessment demand&quot;))
+    &quot;Google (CORE)&quot;
+      &quot;CASA for OAuth restricted scopes&quot;
+      &quot;MASA for Play badge&quot;
+      &quot;developer pays the lab&quot;
+      &quot;annual revalidation&quot;
+    &quot;Microsoft (adjacency)&quot;
+      &quot;M365 App Compliance&quot;
+      &quot;SOC2 / ISO / PCI based&quot;
+      &quot;often Microsoft funded&quot;
+      &quot;VERIFY lab eligibility&quot;
+    &quot;Meta (adjacency)&quot;
+      &quot;Data Protection Assessment&quot;
+      &quot;Graph API data access&quot;
+      &quot;VERIFY lab eligibility&quot;
+    &quot;AI wave (tailwind)&quot;
+      &quot;agents request mailbox and drive scopes&quot;
+      &quot;fast growing obligated cohort&quot;</div>
+<h2 id="5-the-investment-logic-moat--annuity--exit">5. The investment logic (moat → annuity → exit)<a class="anchor" href="#5-the-investment-logic-moat--annuity--exit">#</a></h2>
+<div class="mermaid">flowchart TD
+  A[&quot;ISO 17025 + TrustCB barrier&quot;] --&gt; B[&quot;Only ~10 labs worldwide&quot;]
+  B --&gt; C[&quot;Scarce, defensible license = moat&quot;]
+  C --&gt; D[&quot;Google mandated, annual, lab only demand&quot;]
+  D --&gt; E[&quot;High retention recurring revenue&quot;]
+  E --&gt; F[&quot;Operating leverage via automation&quot;]
+  F --&gt; G[&quot;Profitable compounding annuity&quot;]
+  G --&gt; H[&quot;Strategic acquirers buy license + team&quot;]
+  H --&gt; I[&quot;M&amp;A exit optionality&quot;]</div>
+<h2 id="6-capacity-constrained-growth-the-real-near-term-ceiling">6. Capacity-constrained growth (the real near-term ceiling)<a class="anchor" href="#6-capacity-constrained-growth-the-real-near-term-ceiling">#</a></h2>
+<div class="mermaid">flowchart LR
+  A[&quot;FTE assessors&quot;] --&gt; B[&quot;~180 billable days each&quot;]
+  B --&gt; C[&quot;÷ assessor-days per job&quot;]
+  C --&gt; D[&quot;Annual assessment capacity&quot;]
+  D --&gt; E[&quot;× utilization × ACV&quot;]
+  E --&gt; F[&quot;Capacity-bound revenue&quot;]
+  G[&quot;Automation reduces days per job&quot;] --&gt; C
+  G --&gt; H[&quot;Capacity grows without linear headcount&quot;]
+  H --&gt; D</div></div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<script>(function(){if(!window.mermaid)return;var d=document.documentElement.getAttribute('data-theme')==='dark';
+mermaid.initialize({startOnLoad:true,securityLevel:'loose',theme:d?'dark':'default'});})();</script>
+</body></html>

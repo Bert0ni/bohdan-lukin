@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Config — Cloud Configuration (review) profile · ADA Authorized Lab</title>
+<meta name="description" content="The Cloud Config profile assesses the security configuration of an application&#x27;s cloud environment (identity &amp; access, storage exposure, network, logging…">
+<link rel="canonical" href="https://bohdan-lukin.com/manuals/ada-lab/ada-authorization-cloud-config-profile.html"><meta property="og:type" content="article"><meta property="og:title" content="Cloud Config — Cloud Configuration (review) profile · ADA Authorized Lab"><meta property="og:description" content="The Cloud Config profile assesses the security configuration of an application&#x27;s cloud environment (identity &amp; access, storage exposure, network, logging…">
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="" data-lang="en">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>ADA Lab</b><span>ADA Authorized Lab</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Overview</div><a href="readme.html">ADA Authorized Lab — Operational &amp; Business Plan</a><a href="operational-plan.html">Master Operational Plan — Becoming an ADA Authorized Lab</a><div class="cat">Business case</div><a href="business-case-00-executive-business-case.html">Executive Business Case — ADA Authorized Lab</a><a href="business-case-competitor-pricing.html">Competitor &amp; Market Pricing (researched)</a><a href="business-case-market-sizing.html">Market Sizing — TAM / SAM / SOM</a><a href="business-case-financial-model.html">Financial Model — 5-Year Projections, Costs, Profitability &amp; ROI</a><a href="business-case-mindmaps.html">Mindmaps &amp; Diagrams</a><div class="cat">Strategy</div><a href="strategy-investment-thesis.html">Investment Thesis — ADA Authorized Lab</a><a href="strategy-market-opportunity.html">Market Opportunity</a><a href="strategy-competitive-landscape.html">Competitive Landscape</a><a href="strategy-revenue-model.html">Revenue Model &amp; Unit Economics</a><a href="strategy-partnership-strategy.html">Partnership &amp; Channel Strategy</a><div class="cat">ADA &amp; profiles</div><a href="ada-authorization-overview.html">ADA Authorization — the scheme, profiles and official steps</a><a href="ada-authorization-casa-profile.html">CASA — Cloud Application Security Assessment</a><a href="ada-authorization-masa-profile.html">MASA — Mobile Application Security Assessment</a><a href="ada-authorization-dasa-profile.html">DASA — Developer-Attested Security Assessment</a><a href="ada-authorization-cloud-config-profile.html" class="active">Cloud Config — Cloud Configuration (review) profile</a><a href="ada-authorization-ai-agents-profile.html">AI Agents &amp; Tools (emerging profile)</a><div class="cat">Accreditation</div><a href="accreditation-iso17025-roadmap.html">ISO/IEC 17025 Accreditation Roadmap</a><div class="cat">Delivery</div><a href="delivery-casa-methodology.html">CASA Delivery Methodology (working draft)</a><a href="delivery-toolchain-and-automation.html">Toolchain &amp; Automation</a><div class="cat">Program plan</div><a href="program-plan-phases-and-timeline.html">Phases &amp; Timeline (with gates)</a><a href="program-plan-budget-and-financials.html">Budget &amp; Financials</a><a href="program-plan-org-and-roles.html">Organization, Roles &amp; Independence</a><a href="program-plan-risk-register.html">Risk Register</a><div class="cat">Reference</div><a href="reference-ada-programs-overview.html">ADA Programs — Overview &amp; Mandate Map (internal reference)</a><a href="reference-profiles-matrix.html">Profiles at a glance</a><a href="reference-glossary.html">Glossary</a><a href="reference-official-sources.html">Official Sources &amp; What to Verify</a><div class="cat">Templates</div><a href="templates-authorization-tracker.html">Authorization Tracker (live checklist)</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <span class="badge-internal">INTERNAL · unlisted</span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › ADA &amp; profiles › Cloud Config — Cloud Configuration (review) profile</div><h1 id="cloud-config--cloud-configuration-review-profile">Cloud Config — Cloud Configuration (review) profile</h1>
+<h2 id="what-it-is">What it is<a class="anchor" href="#what-it-is">#</a></h2>
+<p>The <strong>Cloud Config</strong> profile assesses the <strong>security configuration of an application&#x27;s cloud environment</strong> (identity &amp; access, storage exposure, network, logging, key management, etc.), complementing the application-layer focus of CASA. It is the natural companion to a CASA <strong>AL2</strong> engagement, whose scope already reaches <strong>deployment infrastructure and data storage</strong>.</p>
+<blockquote><p><strong>[VERIFY]</strong> Confirm the exact Cloud Config methodology, the cloud providers in scope (AWS/Azure/GCP/others), the benchmark basis (e.g. CIS Benchmarks / provider well-architected security pillars), and its proficiency evaluation with TrustCB.</p></blockquote>
+<h2 id="why-we-add-it-last-profile-4">Why we add it last (profile #4)<a class="anchor" href="#why-we-add-it-last-profile-4">#</a></h2>
+<ul><li><strong>Bundles with CASA AL2</strong> → increases average engagement value without new client acquisition.</li><li>Leverages <strong>existing cloud-pentest / cloud-config-review capability</strong> (IAM, metadata SSRF, storage takeover, K8s, IaC misconfig) — strong internal synergy.</li><li>Lowest incremental demand as a standalone profile, so it rides on CASA rather than leading.</li></ul>
+<h2 id="delivery-model-to-be-defined-from-scheme-docs">Delivery model (to be defined from scheme docs)<a class="anchor" href="#delivery-model-to-be-defined-from-scheme-docs">#</a></h2>
+<ul><li>Read-only access / configuration export of the target cloud environment.</li><li>Review against the profile&#x27;s control set + relevant CIS/provider benchmarks.</li><li>Findings + validation output per the ADA scheme.</li></ul>
+<h2 id="internal-synergy">Internal synergy<a class="anchor" href="#internal-synergy">#</a></h2>
+<p>Map our existing cloud offensive/defensive tooling and checklists to the Cloud Config control set when the methodology document is obtained — this is largely a <strong>packaging</strong> exercise over capability we already have.</p></div>
+  </div>
+</div>
+
+</body></html>

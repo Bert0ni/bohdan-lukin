@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toolchain &amp; Automation · ADA Authorized Lab</title>
+<meta name="description" content="Automation is the margin and capacity lever (see ../strategy/revenue-model.md): fewer assessor-days per assessment, faster turnaround than manual…">
+<link rel="canonical" href="https://bohdan-lukin.com/manuals/ada-lab/delivery-toolchain-and-automation.html"><meta property="og:type" content="article"><meta property="og:title" content="Toolchain &amp; Automation · ADA Authorized Lab"><meta property="og:description" content="Automation is the margin and capacity lever (see ../strategy/revenue-model.md): fewer assessor-days per assessment, faster turnaround than manual…">
+<link rel="stylesheet" href="assets/site.css">
+<script src="search-index.js"></script>
+<script src="assets/site.js"></script>
+</head>
+<body data-base="" data-lang="en">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"><a class="brand" href="index.html"><b>ADA Lab</b><span>ADA Authorized Lab</span></a><nav class="nav"><a href="index.html">🏠 Home</a><div class="cat">Overview</div><a href="readme.html">ADA Authorized Lab — Operational &amp; Business Plan</a><a href="operational-plan.html">Master Operational Plan — Becoming an ADA Authorized Lab</a><div class="cat">Business case</div><a href="business-case-00-executive-business-case.html">Executive Business Case — ADA Authorized Lab</a><a href="business-case-competitor-pricing.html">Competitor &amp; Market Pricing (researched)</a><a href="business-case-market-sizing.html">Market Sizing — TAM / SAM / SOM</a><a href="business-case-financial-model.html">Financial Model — 5-Year Projections, Costs, Profitability &amp; ROI</a><a href="business-case-mindmaps.html">Mindmaps &amp; Diagrams</a><div class="cat">Strategy</div><a href="strategy-investment-thesis.html">Investment Thesis — ADA Authorized Lab</a><a href="strategy-market-opportunity.html">Market Opportunity</a><a href="strategy-competitive-landscape.html">Competitive Landscape</a><a href="strategy-revenue-model.html">Revenue Model &amp; Unit Economics</a><a href="strategy-partnership-strategy.html">Partnership &amp; Channel Strategy</a><div class="cat">ADA &amp; profiles</div><a href="ada-authorization-overview.html">ADA Authorization — the scheme, profiles and official steps</a><a href="ada-authorization-casa-profile.html">CASA — Cloud Application Security Assessment</a><a href="ada-authorization-masa-profile.html">MASA — Mobile Application Security Assessment</a><a href="ada-authorization-dasa-profile.html">DASA — Developer-Attested Security Assessment</a><a href="ada-authorization-cloud-config-profile.html">Cloud Config — Cloud Configuration (review) profile</a><a href="ada-authorization-ai-agents-profile.html">AI Agents &amp; Tools (emerging profile)</a><div class="cat">Accreditation</div><a href="accreditation-iso17025-roadmap.html">ISO/IEC 17025 Accreditation Roadmap</a><div class="cat">Delivery</div><a href="delivery-casa-methodology.html">CASA Delivery Methodology (working draft)</a><a href="delivery-toolchain-and-automation.html" class="active">Toolchain &amp; Automation</a><div class="cat">Program plan</div><a href="program-plan-phases-and-timeline.html">Phases &amp; Timeline (with gates)</a><a href="program-plan-budget-and-financials.html">Budget &amp; Financials</a><a href="program-plan-org-and-roles.html">Organization, Roles &amp; Independence</a><a href="program-plan-risk-register.html">Risk Register</a><div class="cat">Reference</div><a href="reference-ada-programs-overview.html">ADA Programs — Overview &amp; Mandate Map (internal reference)</a><a href="reference-profiles-matrix.html">Profiles at a glance</a><a href="reference-glossary.html">Glossary</a><a href="reference-official-sources.html">Official Sources &amp; What to Verify</a><div class="cat">Templates</div><a href="templates-authorization-tracker.html">Authorization Tracker (live checklist)</a></nav></aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <div class="topbar">
+      <button class="hamb" id="hamb" aria-label="Menu">☰</button>
+      <div class="search">
+        <span class="ico">🔎</span>
+        <input id="q" type="search" placeholder="Search…" autocomplete="off" aria-label="Search">
+        <span class="kbd">/</span>
+        <div class="results" id="results"></div>
+      </div>
+      <span class="spacer"></span>
+      <span class="badge-internal">INTERNAL · unlisted</span>
+      <button class="toggle" id="themeBtn" type="button">Dark</button>
+    </div>
+    <div class="content"><div class="crumbs"><a href="index.html">Home</a> › Delivery › Toolchain &amp; Automation</div><h1 id="toolchain--automation">Toolchain &amp; Automation</h1>
+<p>Automation is the <strong>margin and capacity lever</strong> (see <a href="strategy-revenue-model.html">../strategy/revenue-model.md</a>): fewer assessor-days per assessment, faster turnaround than manual incumbents, and capacity growth without linear headcount. Build the evidence pipeline early so it doubles as QMS operating records and trial-evaluation rehearsal.</p>
+<h2 id="principles">Principles<a class="anchor" href="#principles">#</a></h2>
+<ul><li><strong>Evidence-first:</strong> every CASA/ASVS requirement maps to a repeatable evidence collector (scan, config pull, or scripted manual check) with a stored, ID&#x27;d artifact.</li><li><strong>Traceable &amp; reproducible:</strong> ISO/IEC 17025 demands defensible, repeatable results — automation must log <em>what ran, against what, when, by whom</em>.</li><li><strong>Modular by standard version:</strong> isolate the ASVS/MASVS mapping so a version bump (ASVS 5.0 → next) is a config change, not a rewrite.</li><li><strong>Human-in-the-loop decisioning:</strong> tools gather evidence; <strong>authorized assessors decide</strong> pass/fail. Never auto-issue a Letter of Validation.</li></ul>
+<h2 id="tool-categories-map-to-existing-capability">Tool categories (map to existing capability)<a class="anchor" href="#tool-categories-map-to-existing-capability">#</a></h2>
+<table><thead><tr><th>Need</th><th>Category</th><th>Notes</th></tr></thead><tbody><tr><td><strong>SAST</strong></td><td>Static analysis / secure code review</td><td>Feeds many ASVS code-level requirements</td></tr><tr><td><strong>DAST</strong></td><td>Dynamic app/API scanning</td><td>Core AL1 automated evidence; AL2 active testing</td></tr><tr><td><strong>SCA / dependencies</strong></td><td>Software composition analysis</td><td>Vulnerable-dependency requirements</td></tr><tr><td><strong>Secrets scanning</strong></td><td>Repo/artifact secret detection</td><td>Data-protection / config requirements</td></tr><tr><td><strong>API testing</strong></td><td>Web-service/API checks</td><td>ASVS API category</td></tr><tr><td><strong>Cloud config</strong></td><td>Posture/benchmark review (CIS)</td><td>Cloud Config profile + CASA AL2 infra</td></tr><tr><td><strong>Mobile (MASA)</strong></td><td>MASTG toolchain (Frida, MobSF, jadx, static+dynamic)</td><td>Reuses existing mobile capability</td></tr><tr><td><strong>Evidence/case mgmt</strong></td><td>Workflow + record store</td><td>The ISO-17025-grade backbone</td></tr></tbody></table>
+<blockquote><p>We already operate much of this (web/API, mobile MASTG, cloud offensive/config tooling). The work is <strong>integration into a controlled, evidence-producing pipeline</strong>, not procurement from zero.</p></blockquote>
+<h2 id="the-evidence-pipeline-target-shape">The evidence pipeline (target shape)<a class="anchor" href="#the-evidence-pipeline-target-shape">#</a></h2>
+<pre><code>Intake ─▶ Scope &amp; applicability ─▶ Automated collectors (SAST/DAST/SCA/secrets/config)
+      ─▶ Normalized evidence store (per-requirement, artifact IDs)
+      ─▶ Assessor verification + manual tests (AL2)
+      ─▶ Decision records (conform/nonconform + rationale)
+      ─▶ QA / independent review
+      ─▶ Letter of Validation + retained audit trail</code></pre>
+<h2 id="build-vs-buy">Build vs. buy<a class="anchor" href="#build-vs-buy">#</a></h2>
+<ul><li><strong>Buy/adopt</strong> mature scanners (don&#x27;t reinvent SAST/DAST/SCA).</li><li><strong>Build</strong> the thin <strong>orchestration + ASVS-mapping + evidence/decision record</strong> layer — that&#x27;s the proprietary, margin-making, audit-satisfying asset.</li></ul>
+<h2 id="guardrails">Guardrails<a class="anchor" href="#guardrails">#</a></h2>
+<ul><li>Tool output is <strong>input to a human decision</strong>, never the decision.</li><li>Keep <strong>tool versions and configs</strong> under control (ISO/IEC 17025 equipment/method control).</li><li>Log everything for <strong>reproducibility and surveillance audits</strong>.</li></ul></div>
+  </div>
+</div>
+
+</body></html>
