@@ -60,7 +60,6 @@ h3{margin:0;font-size:1.05rem}
 .hero-inner{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
 .avatar{
   width:160px;height:160px;border-radius:50%;object-fit:cover;
-  border:3px solid rgba(var(--accent-rgb),.5);
   box-shadow:0 10px 40px var(--shadow);flex:0 0 auto;
 }
 .hero-text{flex:1;min-width:280px}
